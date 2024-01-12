@@ -1,27 +1,57 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React, { useState } from 'react';
 import miLogo from "../../assets/logo.png";
+import "../../components/NavBar/_NavBar.scss";
 
-function BasicExample() {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(""); //  estado para el botón activo
+
+  const handleButtonClick = (section) => {
+    console.log(`Navegar a: ${section}`);
+    setActiveSection(section);
+    // agregar lógica de navegación basada en el botón presionado
+  };
+
   return (
-    <Navbar expand="lg" className="bg-light nav" fixed='top' sticky='top'>
-      <Container>
-        {/* Quita las comillas alrededor de {miLogo} */}
-        <Navbar.Brand href="#home"> <img className='logo' src={miLogo} alt="logo" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto links">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#link">Sobre nosotros</Nav.Link>
-            <Nav.Link href="#link">Servicios</Nav.Link>
-            <Nav.Link href="#link">Contacto</Nav.Link> 
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className="navbar">
+      <div className="nav_logo"><img className="logo" src={miLogo} alt="logo" /></div>
+      <div className={`nav_items ${isOpen && "open"}`}>
+        <button
+          className={`nav-btn ${activeSection === "Inicio" && "active"}`}
+          type="button"
+          onClick={() => handleButtonClick("Inicio")}
+        >
+          Inicio
+        </button>
+        <button
+          className={`nav-btn ${activeSection === "Bio" && "active"}`}
+          type="button"
+          onClick={() => handleButtonClick("Bio")}
+        >
+          Sobre nosotros
+        </button>
+        <button
+          className={`nav-btn ${activeSection === "Portafolio" && "active"}`}
+          type="button"
+          onClick={() => handleButtonClick("Portafolio")}
+        >
+          Servicios
+        </button>
+        <button
+          className={`nav-btn ${activeSection === "Contacto" && "active"}`}
+          type="button"
+          onClick={() => handleButtonClick("Contacto")}
+        >
+          Contacto
+        </button>
+      </div>
+      <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   );
 }
 
-export default BasicExample;
+export default Navbar;
