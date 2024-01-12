@@ -6,7 +6,7 @@ import miLogo from "../../assets/logo.png";
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" className="bg-light" fixed='top' sticky='top'>
+    <Navbar expand="lg" className="bg-light nav" fixed='top' sticky='top'>
       <Container>
         {/* Quita las comillas alrededor de {miLogo} */}
         <Navbar.Brand href="#home"> <img className='logo' src={miLogo} alt="logo" /></Navbar.Brand>

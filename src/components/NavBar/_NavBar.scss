@@ -1,10 +1,23 @@
-.bg-light{
-    background-color: #ffff;
+.nav {
+    display: flex; 
+    padding: 20px 27px;
+    justify-content: space-between;
+    align-items: center;
 }
-.logo{
-    width: 100px;
+
+.bg-light {
+    background-color: transparent;
 }
-.links{
-    gap: 50px;
+
+.logo {
+    width: 50px;
+}
+
+.links {
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 110px;
+align-self: stretch; 
     font-family: "Montserrat";
 }
