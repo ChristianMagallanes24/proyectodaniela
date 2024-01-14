@@ -1,4 +1,3 @@
-
 import './App.scss';
 import Header from './components/Header/Header';
 import Navbar from './components/NavBar/NavBar';

@@ -2,14 +2,11 @@
   background: #ffffff;
   position: sticky;
   top: 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
   padding: 20px 27px;
-
-
 }
 
 .nav_logo {
@@ -70,6 +67,7 @@
 
   .nav_items.open {
     transform: translateX(0) !important;
+    cursor: pointer;
   }
 
   .nav_toggle {
