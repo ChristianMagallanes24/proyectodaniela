@@ -1,5 +1,5 @@
 import React from "react";
-import wp from "../../assets/whatsapp.svg";
+import logo from "../../assets/logo.png";
 import fb from "../../assets/facebook.svg";
 import lin from "../../assets/linkedin.svg";
 import insta from "../../assets/instagram.svg";
@@ -10,33 +10,44 @@ const Footer = () => {
     <>
       <div id="footer-container">
         <div className="titulo-footer">
-          <h2>¡Comienza ahora a cambiar tu futuro!</h2>
+          <h2>¡COMIENZA AHORA A CAMBIAR TU FUTURO!</h2>
 
-          <button className="postularme">Postularme</button>
+          <button className="postularme">POSTULARME</button>
         </div>
         <div className="icons-container">
           <h3>¡Seguinos!</h3>
 
           <div className="icons">
-            <a href="https://api.whatsapp.com/send?phone=5491153657218">
-              <img src={wp} alt="logo whatsapp" />
-            </a>
-
-            <a href="https://www.linkedin.com/company/daniela-vincenzini-rrhh/">
+            <a
+              href="https://www.linkedin.com/company/daniela-vincenzini-rrhh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={lin} alt="logo linkedin" />
             </a>
 
-            <a href="https://web.facebook.com/danielavincenziniHR?_rdc=1&_rdr">
+            <a
+              href="https://web.facebook.com/danielavincenziniHR?_rdc=1&_rdr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={fb} alt="logo facebook" />
             </a>
 
-            <a href="https://www.instagram.com/danielavincenzini/">
+            <a
+              href="https://www.instagram.com/danielavincenzini/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={insta} alt="logo instagram" />
             </a>
+            <h4>Email</h4>
+            <h4>talentos@dvincenzini</h4>
           </div>
         </div>
         <div className="text">
-          <h1>created by coderteam</h1>
+          <img src={logo} alt="logo daniela vincenzini" />
+          <h1>©2024 por Daniela Vincenzini RRHH</h1>
         </div>
       </div>
     </>
