@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import fb from "../../assets/facebook.svg";
 import lin from "../../assets/linkedin.svg";
 import insta from "../../assets/instagram.svg";
@@ -9,11 +9,6 @@ const Footer = () => {
   return (
     <>
       <div id="footer-container">
-        <div className="titulo-footer">
-          <h2>¡COMIENZA AHORA A CAMBIAR TU FUTURO!</h2>
-
-          <button className="postularme">POSTULARME</button>
-        </div>
         <div className="icons-container">
           <h3>¡Seguinos!</h3>
 
@@ -47,7 +42,7 @@ const Footer = () => {
         </div>
         <div className="text">
           <img src={logo} alt="logo daniela vincenzini" />
-          <h1>©2024 por Daniela Vincenzini RRHH</h1>
+          <h5>©2024 por Daniela Vincenzini RRHH</h5>
         </div>
       </div>
     </>
