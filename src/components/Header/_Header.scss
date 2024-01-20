@@ -1,7 +1,11 @@
 .header {
   display: flex;
-  justify-content: center;
+  
   height: 681px;
+  background-image: url(../../assets//hero2.jpeg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 
   .header-info {
     display: flex;
@@ -11,6 +15,7 @@
     align-items: center;
     gap: 49.219px;
     flex: 1 0 0;
+    margin-left: 100px;
 
     .header-text {
       display: flex;

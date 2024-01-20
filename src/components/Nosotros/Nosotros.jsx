@@ -1,7 +1,8 @@
 import React from 'react'
-import myGoals from '../../assets/goals.svg';
-import myDiamond from '../../assets/Diamond.svg';
-import myVision from '../../assets/Vision.svg';
+import myGoals from '../../assets/goals.png';
+import myDiamond from '../../assets/Diamond.png';
+import myVision from '../../assets/Vision.png';
+import myNosotros from '../../assets/nosotros.jpeg';
 
 const Nosotros = () => {
     return (
@@ -12,7 +13,7 @@ const Nosotros = () => {
 
                 {/* Imagen para nosotros */}
                 <div className='nosotros-img-container'>
-                    <img src="https://loremflickr.com/517/368" alt="img" />
+                <img className='nosotros-img' src={myNosotros} alt="xd" />
                 </div>
 
                 {/* sobre nosotros informacion */}

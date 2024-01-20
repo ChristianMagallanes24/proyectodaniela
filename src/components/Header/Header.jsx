@@ -16,8 +16,8 @@ const Header = () => {
         <p className='parrafo-header'>Lorem ipsum dolor sit amet consectetur. Placerat massa morbi scelerisque.</p>
         </div>
        </div>
-
-      <button className='btn-header'>Quiero contactarme</button>
+        {/* <button className='btn-header'>Quiero contactarme</button> */}
+       
       </div>
       {/* imagen del header */}
       <div>

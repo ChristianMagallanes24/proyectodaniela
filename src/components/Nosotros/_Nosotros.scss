@@ -1,7 +1,7 @@
 .nosotros-container {
     flex-direction: column;
     display: flex;
-    height: 457px;
+    
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -9,6 +9,7 @@
 
     .sobre-nosotros {
         display: flex;
+        flex-wrap: wrap;
         width: 1324px;
         justify-content: center;
         align-items: center;
@@ -85,6 +86,11 @@
         align-items: center;
         gap: 10px;
         flex-shrink: 0;
+        border-radius: 50px; 
+        .nosotros-img{
+            width: 100%;
+            border-radius: 50px; 
+        }
     }
 }
 
