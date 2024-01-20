@@ -21,6 +21,7 @@ const Header = () => {
       </div>
       {/* imagen del header */}
       <div>
+      <img src="https://loremflickr.com/504/504" alt="img" />
       </div>
     </header>
   );
