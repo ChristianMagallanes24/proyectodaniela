@@ -1,4 +1,5 @@
 import React from 'react';
+import miImagen from '../../assets/headerimg.png';
 
 
 const Header = () => {
@@ -17,13 +18,16 @@ const Header = () => {
         </div>
        </div>
         {/* <button className='btn-header'>Quiero contactarme</button> */}
+        <button className='btn-header'>Quiero contactarme</button>
        
       </div>
       {/* imagen del header */}
-      <div>
-      <img src="https://loremflickr.com/504/504" alt="img" />
+      <div className='img-header-container'>
+      <img className='header-img' src={miImagen} alt="Mi Imagen" />
       </div>
+      
     </header>
+    
   );
 }
 

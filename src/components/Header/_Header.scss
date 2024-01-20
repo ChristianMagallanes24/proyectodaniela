@@ -1,10 +1,12 @@
 .header {
   display: flex;
-  
+  justify-content: space-around;
+  align-items: center;
   height: 681px;
-  background-image: url(../../assets//hero2.jpeg);
-  background-size: 100%;
-  background-position: center;
+  padding: 0px 142px;
+  flex-wrap: wrap-reverse;
+
+
   background-repeat: no-repeat;
 
   .header-info {
@@ -15,7 +17,7 @@
     align-items: center;
     gap: 49.219px;
     flex: 1 0 0;
-    margin-left: 100px;
+
 
     .header-text {
       display: flex;
@@ -44,18 +46,33 @@
     }
 
     .btn-header {
-      color: #000;
+      color: #FFF;
       font-feature-settings: 'clig' off, 'liga' off;
-      border: none;
-      border-radius: 42.188px;
-      background: #D9D9D9;
-      box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
-      padding: 23.906px 18.281px;
+      /* Botton */
       font-family: Montserrat;
       font-size: 26px;
       font-style: normal;
       font-weight: 700;
       line-height: 26px;
+      /* 100% */
+      border-radius: 42.188px;
+      background: var(--Colores-diseo-alta-Negro, #000);
+      box-shadow: 5.625px 5.625px 5.625px 0px rgba(0, 0, 0, 0.25);
+      display: flex;
+      padding: 23.906px 18.281px;
+      justify-content: center;
+      align-items: center;
+      gap: 14.063px;
+    }
+  }
+
+  .img-header-container {
+    width: 509px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    .header-img {
+      width: 100%;
     }
   }
 }
