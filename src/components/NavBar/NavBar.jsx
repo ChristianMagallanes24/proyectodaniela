@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import miLogo from "../../assets/logo.png";
 import "../../components/NavBar/_NavBar.scss";
 
@@ -14,7 +14,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="nav_logo"><img className="logo" src={miLogo} alt="logo" /></div>
+      <div className="nav_logo">
+        <img className="logo" src={miLogo} alt="logo" />
+      </div>
       <div className={`nav_items ${isOpen && "open"}`}>
         <button
           className={`nav-btn ${activeSection === "Inicio" && "active"}`}
@@ -45,13 +47,16 @@ const Navbar = () => {
           Contacto
         </button>
       </div>
-      <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+      <div
+        className={`nav_toggle ${isOpen && "open"}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
