@@ -1,0 +1,126 @@
+.nosotros-container {
+    flex-direction: column;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 25px;
+
+    .sobre-nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1324px;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-shrink: 0;
+
+        .nosotros-info {
+            display: flex;
+            width: 660px;
+            height: 455px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 54px;
+            flex-shrink: 0;
+            flex-shrink: 0;
+
+            .nosotros-titulo {
+                color: #4B4B4B;
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Subtitle baja */
+                font-family: Montserrat;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 37.014px;
+                /* 102.817% */
+            }
+
+            .nosotros-parrafo {
+                color: #3F3939;
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Body hero */
+                font-family: Montserrat;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                /* 100% */
+            }
+
+            .btn-nosotros {
+                color: #000;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Montserrat;
+                font-size: 22.5px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 37.014px;
+                border-radius: 42.188px;
+                background: #E1E1E1;
+                display: flex;
+                padding: 14.063px;
+                justify-content: center;
+                align-items: center;
+                border: none;
+            }
+        }
+
+
+    }
+
+    .nosotros-img-container {
+        border-radius: 100px;
+        overflow: hidden;
+        display: flex;
+        width: 517px;
+        height: 368px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 50px; 
+        .nosotros-img{
+            width: 100%;
+            border-radius: 50px; 
+        }
+    }
+}
+
+.nosotros-iconos-container {
+    display: flex;
+    width: 1440px;
+    height: 226px;
+    padding: 18px 331px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    .nosotros-iconos {
+        display: flex;
+        width: 150px;
+        height: 147px;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+
+        .nosotros-iconos-p {
+            color: #000;
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Montserrat;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            /* 200% */
+        }
+    }
+}
