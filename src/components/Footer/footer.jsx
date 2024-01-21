@@ -7,7 +7,7 @@ import "../Footer/Footer.scss";
 
 const Footer = () => {
   return (
-    <>
+    <div>
       <div id="footer-container">
         <div className="icons-container">
           <h3>¡Seguinos!</h3>
@@ -45,7 +45,7 @@ const Footer = () => {
           <h5>©2024 por Daniela Vincenzini RRHH</h5>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Footer;

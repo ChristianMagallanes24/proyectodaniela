@@ -27,9 +27,11 @@ const SobreNosotros = () => {
         </div>
         <div className="cuadro">
           <h1>Visión</h1>
-          Reconocimiento multiculturalmente por nuestra capacidad de apoyar tus
-          necesidades de capital humano, contribuyendo al éxito organizacional y
-          al bienestar de las personas.<p></p>
+          <p>
+            Reconocimiento multiculturalmente por nuestra capacidad de apoyar
+            tus necesidades de capital humano, contribuyendo al éxito
+            organizacional y al bienestar de las personas.
+          </p>
         </div>
         <div className="cuadro">
           <h1>Valores</h1>
