@@ -3,15 +3,16 @@
   position: sticky;
   top: 0;
   display: flex;
+  height: 76px; 
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 20px 27px;
+  padding: 0px 27px;
 }
 
 .nav_logo {
   z-index: 1;
-  width: 120px;
+  width: 50px;
 
   .logo {
     width: 100%;

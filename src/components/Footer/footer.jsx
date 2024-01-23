@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text">
-          <img src={logo} alt="logo daniela vincenzini" />
+          <img className="logo" src={logo} alt="logo daniela vincenzini" />
           <h5>©2024 por Daniela Vincenzini RRHH</h5>
         </div>
       </div>

@@ -1,0 +1,156 @@
+.servicios-container {
+
+
+
+    .header-servicios {
+        background: linear-gradient(92deg, #018F83 -0.47%, #00C6A2 44.65%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .header-img-container {
+            width: 502px;
+            height: 517px;
+
+            .header-img {
+                height: 120%;
+            }
+        }
+
+        .header-text {
+            margin-bottom: 150px;
+
+            .servicios-titulo {
+                color: var(--Colores-diseo-alta-Blanco, #FFF);
+                font-feature-settings: 'clig' off, 'liga' off;
+                /* Tipografias diseño alta/Heading 1 Bold */
+                font-family: Montserrat;
+                font-size: 61.04px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 61.04px;
+                /* 100% */
+            }
+
+            .servicios-parrafo {
+                color: var(--Colores-diseo-alta-Blanco, #FFF);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Tipografias diseño alta/Heading 4 */
+                font-family: Montserrat;
+                font-size: 31.25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 31.25px;
+                /* 100% */
+            }
+        }
+    }
+
+    .servicios-section {
+        display: flex;
+        justify-content: center;
+
+        .servicios {
+            display: flex;
+            width: 1125px;
+            height: 908px;
+            padding: 7px 101px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 16px 27px;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            .servicio{
+                display: flex;
+                gap: 27px;
+            }
+            .servicio-titulo {
+                color: var(--Colores-diseo-alta-Color-Primario, #00CBA6);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Tipografias diseño alta/Heading 4 Bold */
+                font-family: Montserrat;
+                font-size: 31.25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 31.25px;
+                /* 100% */
+            }
+
+            .servicio-parrafo {
+                color: var(--Colores-diseo-alta-Negro, #000);
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                /* Body hero */
+                font-family: Montserrat;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                /* 100% */
+            }
+        }
+    }
+
+    .accion {
+        background: var(--Colores-diseo-alta-Color-Primario, #00CBA6);
+        display: flex;
+        height: 308px;
+        padding: 39px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .accion-contenido {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 33px;
+            flex-wrap: wrap;
+
+            .accion-titulo {
+                color: var(--Colores-diseo-alta-Blanco, #FFF);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                width: 576px;
+                /* Tipografias diseño alta/Heading 3 Bold */
+                font-family: Montserrat;
+                font-size: 39.06px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 39.06px;
+                /* 100% */
+            }
+
+            .accion-btn {
+                color: var(--Colores-diseo-alta-Color-Primario, #00CBA6);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                /* 100% */
+                text-transform: uppercase;
+                display: flex;
+                padding: 17px 13px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 30px;
+                background: var(--Colores-diseo-alta-Blanco, #FFF);
+            }
+        }
+
+
+
+    }
+
+}

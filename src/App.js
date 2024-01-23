@@ -1,14 +1,35 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Navbar from "./components/NavBar/NavBar";
 import Nosotros from "./components/Nosotros/Nosotros";
-import "./App.scss";
+import Servicios from "./components/Servicios/Servicios";
 import Footer from "./components/Footer/footer";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+    <Router>
+      
+        <Navbar />
+        <Routes>
+          {/* Agrega una ruta específica para la página de inicio */}
+          <Route path="/" element={<Inicio />} />
+          <Route path="/servicios" element={<Servicios />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+        </Routes>
+      
+    </Router>
+    </div>
+  );
+}
+
+// Nuevo componente para la página de inicio
+function Inicio() {
+  return (
+    <div className="home">
       <Header />
       <Nosotros />
       <Footer />

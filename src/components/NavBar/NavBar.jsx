@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import miLogo from "../../assets/logo.png";
 import "../../components/NavBar/_NavBar.scss";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(""); //  estado para el botón activo
+  const [activeSection, setActiveSection] = useState(""); // estado para el botón activo
 
   const handleButtonClick = (section) => {
     console.log(`Navegar a: ${section}`);
@@ -15,37 +16,39 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav_logo">
-        <img className="logo" src={miLogo} alt="logo" />
+        <Link to="/">
+          <img className="logo" src={miLogo} alt="logo" />
+        </Link>
       </div>
       <div className={`nav_items ${isOpen && "open"}`}>
-        <button
+        <Link
+          to="/"
           className={`nav-btn ${activeSection === "Inicio" && "active"}`}
-          type="button"
           onClick={() => handleButtonClick("Inicio")}
         >
           Inicio
-        </button>
-        <button
+        </Link>
+        <Link
+          to="/sobrenosotros"
           className={`nav-btn ${activeSection === "Bio" && "active"}`}
-          type="button"
           onClick={() => handleButtonClick("Bio")}
         >
           Sobre nosotros
-        </button>
-        <button
-          className={`nav-btn ${activeSection === "Portafolio" && "active"}`}
-          type="button"
-          onClick={() => handleButtonClick("Portafolio")}
+        </Link>
+        <Link
+          to="/servicios"
+          className={`nav-btn ${activeSection === "Servicios" && "active"}`}
+          onClick={() => handleButtonClick("Servicios")}
         >
           Servicios
-        </button>
-        <button
+        </Link>
+        <Link
+          to="/contacto"
           className={`nav-btn ${activeSection === "Contacto" && "active"}`}
-          type="button"
           onClick={() => handleButtonClick("Contacto")}
         >
           Contacto
-        </button>
+        </Link>
       </div>
       <div
         className={`nav_toggle ${isOpen && "open"}`}
