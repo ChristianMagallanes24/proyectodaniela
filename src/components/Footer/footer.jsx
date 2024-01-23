@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logoblanco.png";
 import fb from "../../assets/facebook.svg";
 import lin from "../../assets/linkedin.svg";
 import insta from "../../assets/instagram.svg";
