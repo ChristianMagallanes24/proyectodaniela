@@ -29,7 +29,7 @@ const Navbar = () => {
           Inicio
         </Link>
         <Link
-          to="/sobrenosotros"
+          to="/Sobrenosotros"
           className={`nav-btn ${activeSection === "Bio" && "active"}`}
           onClick={() => handleButtonClick("Bio")}
         >

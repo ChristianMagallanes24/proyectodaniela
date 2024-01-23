@@ -7,6 +7,7 @@ import Navbar from "./components/NavBar/NavBar";
 import Nosotros from "./components/Nosotros/Nosotros";
 import Servicios from "./components/Servicios/Servicios";
 import Footer from "./components/Footer/footer";
+import SobreNosotros from "./components/SobreNosotros/SobreNosotros";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           {/* Agrega una ruta específica para la página de inicio */}
           <Route path="/" element={<Inicio />} />
           <Route path="/servicios" element={<Servicios />} />
-          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/Sobrenosotros" element={<SobreNosotros />} />
         </Routes>
       
     </Router>
