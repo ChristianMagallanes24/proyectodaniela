@@ -1,86 +1,95 @@
 .descripcion {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Montserrat;
-    padding: 0 50px 0 50px;
-    text-align: center;
-  
-    h1 {
-      color: #00cba6;
-      margin-bottom: 20px;
-      font-size: 25px;
-    }
-    p {
-      font-size: 15px;
-    }
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  padding: 0 50px 0 50px;
+  text-align: center;
+
+  h1 {
+    color: #00cba6;
+    margin-bottom: 20px;
+    font-size: 25px;
   }
+  p {
+    font-size: 15px;
+  }
+}
+.cuadros {
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 90px;
+}
+.cuadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  h1 {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  p {
+    margin: auto;
+  }
+  .btn-saber-mas {
+    background-color: #00cba6;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1024px) {
   .cuadros {
-    font-family: Montserrat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  
-    padding: 90px;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 18px;
   }
   .cuadro {
-    display: flex;
-    flex-direction: column;
-  
-    height: 300px;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
-    justify-content: center;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+  }
+  .descripcion {
     h1 {
-      margin-top: 10px;
+      font-size: 30px;
     }
     p {
-      margin: auto;
-    }
-  }
-  @media screen and (min-width: 700px) and (max-width: 1024px) {
-    .cuadros {
-      flex-direction: row;
-      padding: 20px;
-      font-size: 18px;
-    }
-    .cuadro {
-      width: 400px;
-      height: 500px;
-      margin: 10px;
-    }
-    .descripcion {
-      h1 {
-        font-size: 30px;
-      }
-      p {
-        font-size: 20px;
-      }
-    }
-  }
-  @media screen and (min-width: 1025px) {
-    .cuadros {
-      flex-direction: row;
       font-size: 20px;
-      padding: 20px;
-    }
-    .cuadro {
-      width: 300px;
-      height: 400px;
-      margin: 20px;
-      width: 500px;
-      height: 500px;
-    }
-    .descripcion {
-      h1 {
-        font-size: 35px;
-      }
-      p {
-        font-size: 25px;
-      }
     }
   }
+}
+@media screen and (min-width: 1025px) {
+  .cuadros {
+    flex-direction: row;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .cuadro {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+  }
+  .descripcion {
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 25px;
+    }
+  }
+}
