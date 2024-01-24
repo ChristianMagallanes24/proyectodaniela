@@ -13,7 +13,7 @@ const Nosotros = () => {
           <img className="nosotros-img" src={myNosotros} alt="xd" />
         </div>
 
-        {/* sobre nosotros informacion */}
+        {/* sobre nosotros informacion "inicio" */}
         <div className="nosotros-info">
           <h2 className="nosotros-titulo">Sobre nosotros</h2>
           <p className="nosotros-parrafo">
@@ -28,48 +28,70 @@ const Nosotros = () => {
       <div className="nosotros-iconos-container">
         <div className="nosotros-iconos">
           <img src={myGoals} alt="xd" />
-          <h3>Mision</h3>
+          <h3 className="iconos-titulo">Mision</h3>
           <p className="nosotros-iconos-p">Servicio de calidad</p>
         </div>
         <div className="nosotros-iconos">
           <img src={myDiamond} alt="xd" />
-          <h3>Vision</h3>
+          <h3 className="iconos-titulo">Vision</h3>
           <p className="nosotros-iconos-p">Reconocimiento</p>
         </div>
         <div className="nosotros-iconos">
           <img src={myVision} alt="xd" />
-          <h3>Valores</h3>
+          <h3 className="iconos-titulo">Valores</h3>
           <p className="nosotros-iconos-p">Profesionalismo</p>
         </div>
       </div>
-      <div className="descripcion">
-        <h1>¿Qué ofrecemos?</h1>
-      </div>
-      <div className="cuadros">
-        <div className="cuadro">
-          <h1>Reclutamiento y Selección</h1>
-          <p>
-            Definimos el perfil del colaborador, reconocemos las necesidades e
-            iniciamos la búsqueda.
-          </p>
-          <button className="btn-saber-mas">Saber mas</button>
-        </div>
-        <div className="cuadro">
-          <h1>Consultoría organizaicional y recursos humanos</h1>
-          <p>
-            Asesoría especializada en atracción del talento, onboarding,
-            capacitación, desarrollo, clima, felicidad laboral, administración
-            de personal.
-          </p>
-          <button className="btn-saber-mas">Saber mas</button>
-        </div>
-        <div className="cuadro">
-          <h1>Consulta inicial e intervensiones sistémicas</h1>
-          <p>
-            Estamos para escucharte, ayudarte con los procesos que impliquen
-            decisiones importantes, clima, liderazgo.
-          </p>
-          <button className="btn-saber-mas">Saber mas</button>
+
+      {/* que ofrecemos que va en el "inicio" */}
+
+      <div className="que-ofrecemos-container">
+        
+          <h1 className="titulo">¿Qué ofrecemos?</h1>
+       
+
+        <div className="que-ofrecemos">
+          <div className="que-ofrecemos-card">
+            <div className="que-ofrecemos-card-text">
+              <h1 className="que-ofrecemos-titulo">
+              Reclutamiento y Selección
+              </h1>
+              <p className="que-ofrecemos-parrafo">
+              Definimos el perfil del colaborador, reconocemos las necesidades e iniciamos la búsqueda.
+              </p>
+            </div>
+            <div className="que-ofrecemos-card-btn-container">
+              <button className="que-ofrecemos-btn">Saber mas</button>
+            </div>
+          </div>
+
+          <div className="que-ofrecemos-card">
+            <div className="que-ofrecemos-card-text">
+              <h1 className="que-ofrecemos-titulo">
+                Consultoría organizaicional y recursos humanos
+              </h1>
+              <p className="que-ofrecemos-parrafo">
+              Asesoría especializada en atracción del talento, onboarding, capacitación, desarrollo, clima, felicidad laboral, administración de personal.
+              </p>
+            </div>
+            <div className="que-ofrecemos-card-btn-container">
+              <button className="que-ofrecemos-btn">Saber mas</button>
+            </div>
+          </div>
+
+          <div className="que-ofrecemos-card">
+            <div className="que-ofrecemos-card-text">
+              <h1 className="que-ofrecemos-titulo">
+              Consulta inicial e intervensiones sistémicas
+              </h1>
+              <p className="que-ofrecemos-parrafo">
+              Estamos para escucharte, ayudarte con los procesos que impliquen decisiones importantes, clima, liderazgo.
+              </p>
+            </div>
+            <div className="que-ofrecemos-card-btn-container">
+              <button className="que-ofrecemos-btn">Saber mas</button>
+            </div>
+          </div>
         </div>
       </div>
       <div className="accion">

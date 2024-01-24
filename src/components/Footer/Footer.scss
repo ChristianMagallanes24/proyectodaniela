@@ -1,64 +1,79 @@
 #footer-container {
-  height: 152px; 
-  width: 100vw;
-  background-color: white;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  bottom: 0;
-  font-family: Montserrat;
+  display: flex;
+
+  height: 295px;
+  padding: 0px 20px;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 20px;
-}
+  gap: 10px;
+  flex-shrink: 0;
 
-.titulo-footer {
-  display: flex;
-  justify-content: space-around;
+  .footer-titulo {
+    color: var(--Colores-diseo-alta-Negro, #000);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 100% */
+    margin: 20px;
+  }
+  .icons-container {
+    display: flex;
+    width: 369px;
+    height: 211px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
 
-  flex-wrap: wrap;
-  padding: 3rem;
-  background-color: #00cba6;
-  color: white;
-}
-.titulo-footer {
-  button {
-    padding: 0.5rem;
-    border-radius: 1.5rem;
-    background-color: white;
-    color: #00cba6;
-    border: white;
+
+  .icons {
+    display: flex;
+    width: 266px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+    .iconos {
+      display: flex;
+      width: 259px;
+      align-items: center;
+      gap: 33px;
+      .icon {
+        width: 49px;
+        height: 49px;
+        flex-shrink: 0;
+      }
+      
+    }
+    .footer-info-container{
+      text-align: center;
+      .footer-info {
+        color: var(--Colores-diseo-alta-Gris-Oscuro, #6d6d6d);
+        text-align: center;
+        font-family: Arial;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
   }
 }
-.icons-container {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 3rem;
-  color: black;
-  flex: 1 0 25 rem;
-  flex-flow: column wrap;
-  text-align: center;
-
-}
-.icons-container h4 {
-  color: #808080;
-  font-size: 15px;
-}
-
-.icons {
-  a img {
-    height: 25px;
-
-    margin: 15px;
-  }
-}
-
 .text {
   width: 100%;
   background-color: #008e81;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+.logo{
+  width: 90px;
+}
   img {
     width: 30px;
     margin-top: 1rem;
