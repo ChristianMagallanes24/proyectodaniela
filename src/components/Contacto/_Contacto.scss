@@ -1,0 +1,31 @@
+body {
+    background-color: rgba(192, 192, 192, 0.3);
+  }
+  .contacto-container {
+    display: flex;
+    img {
+      width: 350px;
+      margin-right: 100px;
+    }
+  }
+  
+  .contacto-titulo {
+    margin-left: 200px;
+    margin-top: 80px;
+    h1 {
+      margin-bottom: 30px;
+      font-size: 35px;
+    }
+    button {
+      color: #fff;
+      background-color: #00cba6;
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      margin-left: 100px;
+    }
+  }
+  .icons-container {
+    margin-top: 50px;
+    margin-left: 350px;
+  }
