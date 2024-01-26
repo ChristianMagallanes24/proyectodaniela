@@ -10,7 +10,11 @@ const Navbar = () => {
   const handleButtonClick = (section) => {
     console.log(`Navegar a: ${section}`);
     setActiveSection(section);
-    // agregar lógica de navegación basada en el botón presionado
+
+    // Agregar lógica de navegación basada en el botón presionado
+
+    // Scroll hacia arriba al hacer clic en un botón de navegación
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
