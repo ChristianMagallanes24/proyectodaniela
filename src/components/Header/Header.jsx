@@ -14,7 +14,7 @@ const Header = () => {
        </div>
 
         <div>
-        <p className='parrafo-header'>Lorem ipsum dolor sit amet consectetur. Placerat massa morbi scelerisque.</p>
+        <p className='parrafo-header'>Generamos soluciones de valor con compromiso, coraje, enfoque, apertura y respeto.</p>
         </div>
        </div>
         {/* <button className='btn-header'>Quiero contactarme</button> */}

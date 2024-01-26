@@ -22,13 +22,7 @@ const Footer = () => {
             
 
            <div className="iconos">
-           <a
-              href="https://www.instagram.com/danielavincenzini/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img  src={insta} alt="logo instagram" />
-            </a>
+          
 
            <a
               href="https://web.facebook.com/danielavincenziniHR?_rdc=1&_rdr"
@@ -38,7 +32,13 @@ const Footer = () => {
               <img src={fb} alt="logo facebook" />
             </a>
 
-           
+            <a
+              href="https://www.instagram.com/danielavincenzini/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img  src={insta} alt="logo instagram" />
+            </a>
             
             <a
               href="https://www.linkedin.com/company/daniela-vincenzini-rrhh/"

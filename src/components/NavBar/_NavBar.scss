@@ -32,14 +32,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  transition: color 0.5s;
+  transition: color 0.1s;
   padding: 10px;
   &:hover,
   &.active {
     color: #ffffff;
     border-radius: 15px;
     background: var(--Colores-diseo-alta-Color-Secundario-1, #008E81); 
-    transition: color 0.5s;
+    transition: color 0.1s;
   }
 }
 

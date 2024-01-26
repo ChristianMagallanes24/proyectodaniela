@@ -60,9 +60,7 @@ const Nosotros = () => {
               Definimos el perfil del colaborador, reconocemos las necesidades e iniciamos la búsqueda.
               </p>
             </div>
-            <div className="que-ofrecemos-card-btn-container">
-              <button className="que-ofrecemos-btn">Saber mas</button>
-            </div>
+            
           </div>
 
           <div className="que-ofrecemos-card">
@@ -88,9 +86,7 @@ const Nosotros = () => {
               Estamos para escucharte, ayudarte con los procesos que impliquen decisiones importantes, clima, liderazgo.
               </p>
             </div>
-            <div className="que-ofrecemos-card-btn-container">
-              <button className="que-ofrecemos-btn">Saber mas</button>
-            </div>
+           
           </div>
         </div>
       </div>

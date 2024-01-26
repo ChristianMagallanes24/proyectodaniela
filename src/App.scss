@@ -15,10 +15,34 @@ body {
 
 .home {
   margin: 0 auto;
-
   background: url("./assets/test.svg") left top no-repeat,
     url("./assets/testt.svg") right top no-repeat;
-  background-size: 450px auto, 227.826px auto; // Ajusta los tamaños según tus necesidades
-  background-position: 0px 500px, calc(100% - 0px) 500px; // Ajusta las posiciones según tus necesidades
+  background-size: 450px auto, 227.826px auto; 
+  background-position: 0px 500px, calc(100% - 0px) 500px; 
   
+}
+
+
+@mixin desktop1 {
+  @media screen and (max-width: 1553px) {
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 800px) {
+      @content;
+  }
+}
+@mixin tablet2 {
+  @media screen and (max-width: 600px) {
+      @content;
+  }
+}
+
+
+@mixin mobile {
+  @media screen and (max-width:480px) {
+      @content;
+  }
 }
