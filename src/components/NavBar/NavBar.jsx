@@ -2,18 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import miLogo from "../../assets/logo.png";
 import "../../components/NavBar/_NavBar.scss";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(""); // estado para el botón activo
+  const location = useLocation();
 
   const handleButtonClick = (section) => {
     console.log(`Navegar a: ${section}`);
-    setActiveSection(section);
-
-    // Agregar lógica de navegación basada en el botón presionado
-
-    // Scroll hacia arriba al hacer clic en un botón de navegación
+    setIsOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -27,29 +24,33 @@ const Navbar = () => {
       <div className={`nav_items ${isOpen && "open"}`}>
         <Link
           to="/"
-          className={`nav-btn ${activeSection === "Inicio" && "active"}`}
-          onClick={() => handleButtonClick("Inicio")}
+          className={`nav-btn ${location.pathname === "/" && "active"}`}
+          onClick={() => handleButtonClick("")}
         >
           Inicio
         </Link>
         <Link
-          to="/Sobrenosotros"
-          className={`nav-btn ${activeSection === "Bio" && "active"}`}
-          onClick={() => handleButtonClick("Bio")}
+          to="/sobreNosotros"
+          className={`nav-btn ${
+            location.pathname === "/sobreNosotros" && "active"
+          }`}
+          onClick={() => handleButtonClick("sobreNosotros")}
         >
           Sobre nosotros
         </Link>
         <Link
           to="/servicios"
-          className={`nav-btn ${activeSection === "Servicios" && "active"}`}
-          onClick={() => handleButtonClick("Servicios")}
+          className={`nav-btn ${
+            location.pathname === "/servicios" && "active"
+          }`}
+          onClick={() => handleButtonClick("servicios")}
         >
           Servicios
         </Link>
         <Link
           to="/contacto"
-          className={`nav-btn ${activeSection === "Contacto" && "active"}`}
-          onClick={() => handleButtonClick("Contacto")}
+          className={`nav-btn ${location.pathname === "/contacto" && "active"}`}
+          onClick={() => handleButtonClick("contacto")}
         >
           Contacto
         </Link>

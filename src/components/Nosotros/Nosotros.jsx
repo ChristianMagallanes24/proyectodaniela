@@ -3,6 +3,7 @@ import myGoals from "../../assets/goals.png";
 import myDiamond from "../../assets/Diamond.png";
 import myVision from "../../assets/Vision.png";
 import myNosotros from "../../assets/nosotros.jpeg";
+import { Link } from "react-router-dom";
 
 const Nosotros = () => {
   return (
@@ -21,7 +22,9 @@ const Nosotros = () => {
             Profesionales de Recursos Humanos de perfiles IT y
             generalistas,adaptados a la necesidad de cada Cliente. 
           </p>
-          <button className="btn-nosotros">Saber más</button>
+          <Link to="/sobreNosotros" className="btn-nosotros">
+            Saber mas
+          </Link>
         </div>
       </div>
 
@@ -46,21 +49,19 @@ const Nosotros = () => {
       {/* que ofrecemos que va en el "inicio" */}
 
       <div className="que-ofrecemos-container">
-        
-          <h1 className="titulo">¿Qué ofrecemos?</h1>
-       
+        <h1 className="titulo">¿Qué ofrecemos?</h1>
 
         <div className="que-ofrecemos">
           <div className="que-ofrecemos-card">
             <div className="que-ofrecemos-card-text">
               <h1 className="que-ofrecemos-titulo">
-              Reclutamiento y Selección
+                Reclutamiento y Selección
               </h1>
               <p className="que-ofrecemos-parrafo">
-              Definimos el perfil del colaborador, reconocemos las necesidades e iniciamos la búsqueda.
+                Definimos el perfil del colaborador, reconocemos las
+                necesidades e iniciamos la búsqueda.
               </p>
             </div>
-            
           </div>
 
           <div className="que-ofrecemos-card">
@@ -69,7 +70,9 @@ const Nosotros = () => {
                 Consultoría organizaicional y recursos humanos
               </h1>
               <p className="que-ofrecemos-parrafo">
-              Asesoría especializada en atracción del talento, onboarding, capacitación, desarrollo, clima, felicidad laboral, administración de personal.
+                Asesoría especializada en atracción del talento, onboarding,
+                capacitación, desarrollo, clima, felicidad laboral,
+                administración de personal.
               </p>
             </div>
             <div className="que-ofrecemos-card-btn-container">
@@ -80,13 +83,13 @@ const Nosotros = () => {
           <div className="que-ofrecemos-card">
             <div className="que-ofrecemos-card-text">
               <h1 className="que-ofrecemos-titulo">
-              Consulta inicial e intervensiones sistémicas
+                Consulta inicial e intervensiones sistémicas
               </h1>
               <p className="que-ofrecemos-parrafo">
-              Estamos para escucharte, ayudarte con los procesos que impliquen decisiones importantes, clima, liderazgo.
+                Estamos para escucharte, ayudarte con los procesos que impliquen
+                decisiones importantes, clima, liderazgo.
               </p>
             </div>
-           
           </div>
         </div>
       </div>
