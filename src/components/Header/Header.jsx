@@ -1,4 +1,5 @@
 import React from 'react';
+import './_Header.scss';
 import miImagen from '../../assets/headerimg.png';
 
 

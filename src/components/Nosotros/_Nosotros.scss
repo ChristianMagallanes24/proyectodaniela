@@ -1,12 +1,14 @@
+@import "../../Medidas.scss";
 .nosotros-container {
   flex-direction: column;
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   gap: 25px;
-
+@include desktop1{
+  width: 100%;
+}
   .sobre-nosotros {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +17,13 @@
     align-items: center;
     gap: 25px;
     flex-shrink: 0;
-
+    @include desktop1{
+      width: 100%;
+    }
+    @include mobile {
+      gap: 0;
+      width: 100%;
+    }
     .nosotros-info {
       display: flex;
       width: 660px;
@@ -25,12 +33,14 @@
       align-items: center;
       gap: 14px;
       flex-shrink: 0;
-
+      @include mobile {
+        width: 100%;
+             
+      }
       .nosotros-titulo {
         color: var(--Colores-diseo-alta-Negro, #000);
         text-align: center;
         font-feature-settings: "clig" off, "liga" off;
-
         /* Subtitle baja */
         font-family: Montserrat;
         font-size: 36px;
@@ -38,6 +48,9 @@
         font-weight: 700;
         line-height: 37.014px;
         /* 102.817% */
+        @include mobile {
+          font-size: 26px;
+        }
       }
 
       .nosotros-parrafo {
@@ -51,6 +64,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 31.25px; /* 100% */
+        @include mobile {
+          font-size: 18px;
+          width: 312.5px;
+        }
       }
 
       .btn-nosotros {
@@ -85,6 +102,9 @@
     gap: 10px;
     flex-shrink: 0;
     border-radius: 50px;
+    @include mobile {
+      display: none;
+    }
     .nosotros-img {
       width: 100%;
       border-radius: 50px;
@@ -94,13 +114,19 @@
 
 .nosotros-iconos-container {
   display: flex;
-  width: 1440px;
+  width: 100%;
   height: 226px;
   padding: 18px 331px;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-
+  @include desktop1{
+    
+  }
+@include mobile{
+  display: none;
+  padding: 0;
+}
   .nosotros-iconos {
     display: flex;
     width: 150px;
@@ -165,6 +191,10 @@
       font-weight: 700;
       line-height: 39.06px;
       /* 100% */
+      @include mobile{
+        width: 283px;
+flex-shrink: 0;
+      }
     }
 
     .accion-btn {
@@ -199,6 +229,11 @@
   align-items: center;
   gap: 33px;
   flex-shrink: 0;
+  @include mobile{
+    height: auto;
+    gap: 20;
+    padding: 0;
+  }
   .titulo {
     color: var(--Colores-diseo-alta-Color-Primario, #00cba6);
     text-align: center;
@@ -210,6 +245,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 39.06px; /* 100% */
+    @include mobile {
+      font-size: 26px; 
+    }
   }
   .que-ofrecemos {
     display: flex;
@@ -220,6 +258,12 @@
     row-gap: 108px;
     flex-shrink: 0;
     flex-wrap: wrap;
+    @include mobile{
+      flex-direction: column;
+      height: auto;
+      flex-wrap: wrap;
+      width: 100%;
+    }
     .que-ofrecemos-card {
       display: flex;
       width: 328px;
@@ -233,6 +277,7 @@
       border-radius: 15px;
       background: var(--Colores-diseo-alta-Blanco, #fff);
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+      
       .que-ofrecemos-card-text {
         display: flex;
         height: 207px;
@@ -251,6 +296,9 @@
           font-style: normal;
           font-weight: 700;
           line-height: 25px; /* 100% */
+          @include mobile{
+            font-size: 20px; 
+          }
         }
         .que-ofrecemos-parrafo {
           color: var(--Colores-diseo-alta-Negro, #000);
@@ -263,6 +311,9 @@
           font-style: normal;
           font-weight: 400;
           line-height: 24px; /* 120% */
+          @include mobile{
+            font-size: 20px; 
+          }
         }
       }
 
@@ -289,6 +340,9 @@
           font-style: normal;
           font-weight: 700;
           line-height: 24px; /* 120% */
+          @include mobile{
+            font-size: 16px; 
+          }
         }
       }
     }

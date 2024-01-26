@@ -17,9 +17,8 @@ const Nosotros = () => {
         <div className="nosotros-info">
           <h2 className="nosotros-titulo">Sobre nosotros</h2>
           <p className="nosotros-parrafo">
-            Somos una Organización Global dedicada a brindar Servicios
-            Profesionales de Recursos Humanos de perfiles IT y
-            generalistas,adaptados a la necesidad de cada Cliente. 
+          Somos una organización virtual que se expande a nivel global ofreciendo servicios de capital humano para empresas.
+
           </p>
           <button className="btn-nosotros">Saber más</button>
         </div>
