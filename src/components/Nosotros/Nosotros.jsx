@@ -76,7 +76,9 @@ const Nosotros = () => {
               </p>
             </div>
             <div className="que-ofrecemos-card-btn-container">
-              <button className="que-ofrecemos-btn">Saber mas</button>
+              <Link to="/servicios" className="que-ofrecemos-btn">
+                Saber mas
+              </Link>
             </div>
           </div>
 
