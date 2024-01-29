@@ -8,22 +8,23 @@ import "../Footer/Footer.scss";
 const Footer = () => {
   return (
     <>
+    <div className="footer-titulo-container">
+    <h3 className="footer-titulo">¡Seguinos!</h3>
+    </div>
+     {/* footer contenedor padre */}
       <div id="footer-container">
-
-     <div>
-     <h3 className="footer-titulo">¡Seguinos!</h3>
-     </div>
+      
+      {/*contenedor para el titulo del footer*/}
+     
+     
+     
 
       
+         {/* contenedor padre para los iconos */}
        
-       <div className="icons-container">
-       
-          <div className="icons">
-            
-
+         {/* contenedor que contiene los iconos */}
            <div className="iconos">
-          
-
+           <div className="icons">
            <a
               href="https://web.facebook.com/danielavincenziniHR?_rdc=1&_rdr"
               target="_blank"
@@ -48,17 +49,15 @@ const Footer = () => {
               <img src={lin} alt="logo linkedin" />
             </a>
            </div>
+           </div>
 
            
-           <div className="footer-info-container">
-           <h4 className="footer-info">Email:</h4>
-            <h4 className="footer-info">talentos@dvincenzini</h4>
-           </div>
+           
+           
+            <h4 className="footer-info">talentos@dvincenzini.com</h4>
+           
             
           </div>
-          </div>
-          
-       </div>
           
           <div>
           

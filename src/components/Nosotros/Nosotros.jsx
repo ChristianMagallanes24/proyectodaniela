@@ -43,10 +43,10 @@ const Nosotros = () => {
       </div>
 
       {/* que ofrecemos que va en el "inicio" */}
-
+      <h1 className="titulo">¿Qué ofrecemos?</h1>
       <div className="que-ofrecemos-container">
         
-          <h1 className="titulo">¿Qué ofrecemos?</h1>
+         
        
 
         <div className="que-ofrecemos">
@@ -71,9 +71,7 @@ const Nosotros = () => {
               Asesoría especializada en atracción del talento, onboarding, capacitación, desarrollo, clima, felicidad laboral, administración de personal.
               </p>
             </div>
-            <div className="que-ofrecemos-card-btn-container">
-              <button className="que-ofrecemos-btn">Saber mas</button>
-            </div>
+           
           </div>
 
           <div className="que-ofrecemos-card">
@@ -88,6 +86,9 @@ const Nosotros = () => {
            
           </div>
         </div>
+        <div className="que-ofrecemos-card-btn-container">
+              <button className="que-ofrecemos-btn">Saber mas</button>
+            </div>
       </div>
       <div className="accion">
         <div className="accion-contenido">

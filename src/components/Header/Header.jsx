@@ -11,7 +11,7 @@ const Header = () => {
 
        <div className='header-text'>
        <div>
-       <h1 className='titulo'>Conectamos tu talento con las empresas</h1>
+       <h1 className='header-titulo'>Conectamos tu talento con las empresas</h1>
        </div>
 
         <div>
