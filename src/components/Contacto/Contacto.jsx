@@ -9,9 +9,8 @@ const Contacto = () => {
     <div>
       <div className="contacto-container">
         <div className="contacto-info">
-          <h2 className="info-titulo">¡COMIENZA AHORA A CAMBIAR TU FUTURO!</h2>
+          <h2 className="info-titulo">¡Da el primer paso!</h2>
           <button className="contacto-btn">Contactame</button>
-          
         </div>
 
         <div className="contacto-img-container">
@@ -19,9 +18,7 @@ const Contacto = () => {
         </div>
       </div>
 
-      
       <Footer />
-      
     </div>
   );
 };

@@ -17,8 +17,8 @@ const Nosotros = () => {
         <div className="nosotros-info">
           <h2 className="nosotros-titulo">Sobre nosotros</h2>
           <p className="nosotros-parrafo">
-          Somos una organización virtual que se expande a nivel global ofreciendo servicios de capital humano para empresas.
-
+            Somos una organización virtual que se expande a nivel global
+            ofreciendo servicios de capital humano para empresas.
           </p>
           <button className="btn-nosotros">Saber más</button>
         </div>
@@ -28,38 +28,40 @@ const Nosotros = () => {
         <div className="nosotros-iconos">
           <img src={myGoals} alt="xd" />
           <h3 className="iconos-titulo">Mision</h3>
-          <p className="nosotros-iconos-p">Servicio de calidad</p>
+          <p className="nosotros-iconos-p">
+            Aportar valor a procesos de capital humano.
+          </p>
         </div>
         <div className="nosotros-iconos">
           <img src={myDiamond} alt="xd" />
           <h3 className="iconos-titulo">Vision</h3>
-          <p className="nosotros-iconos-p">Reconocimiento</p>
+          <p className="nosotros-iconos-p">
+            Contribuir al éxito organizacional y de las personas.
+          </p>
         </div>
         <div className="nosotros-iconos">
           <img src={myVision} alt="xd" />
           <h3 className="iconos-titulo">Valores</h3>
-          <p className="nosotros-iconos-p">Profesionalismo</p>
+          <p className="nosotros-iconos-p">
+            Colaboración, enfoque, profesionalidad y responsabilidad.
+          </p>
         </div>
       </div>
 
       {/* que ofrecemos que va en el "inicio" */}
-      <h1 className="titulo">¿Qué ofrecemos?</h1>
+      <h1 className="titulo">¿Qué hacemos?</h1>
       <div className="que-ofrecemos-container">
-        
-         
-       
-
         <div className="que-ofrecemos">
           <div className="que-ofrecemos-card">
             <div className="que-ofrecemos-card-text">
               <h1 className="que-ofrecemos-titulo">
-              Reclutamiento y Selección
+                Reclutamiento y Selección
               </h1>
               <p className="que-ofrecemos-parrafo">
-              Definimos el perfil del colaborador, reconocemos las necesidades e iniciamos la búsqueda.
+                Definimos el perfil del colaborador, reconocemos las
+                necesidades e iniciamos la búsqueda.
               </p>
             </div>
-            
           </div>
 
           <div className="que-ofrecemos-card">
@@ -68,27 +70,28 @@ const Nosotros = () => {
                 Consultoría organizaicional y recursos humanos
               </h1>
               <p className="que-ofrecemos-parrafo">
-              Asesoría especializada en atracción del talento, onboarding, capacitación, desarrollo, clima, felicidad laboral, administración de personal.
+                Asesoría especializada en atracción del talento, onboarding,
+                capacitación, desarrollo, clima, felicidad laboral,
+                administración de personal.
               </p>
             </div>
-           
           </div>
 
           <div className="que-ofrecemos-card">
             <div className="que-ofrecemos-card-text">
               <h1 className="que-ofrecemos-titulo">
-              Consulta inicial e intervensiones sistémicas
+                Consulta inicial e intervensiones sistémicas
               </h1>
               <p className="que-ofrecemos-parrafo">
-              Estamos para escucharte, ayudarte con los procesos que impliquen decisiones importantes, clima, liderazgo.
+                Estamos para escucharte, ayudarte con los procesos que impliquen
+                decisiones importantes, clima, liderazgo.
               </p>
             </div>
-           
           </div>
         </div>
         <div className="que-ofrecemos-card-btn-container">
-              <button className="que-ofrecemos-btn">Saber mas</button>
-            </div>
+          <button className="que-ofrecemos-btn">Saber mas</button>
+        </div>
       </div>
       <div className="accion">
         <div className="accion-contenido">

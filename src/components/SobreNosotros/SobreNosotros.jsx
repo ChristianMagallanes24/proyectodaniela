@@ -30,10 +30,11 @@ const SobreNosotros = () => {
             <h1 className="cuadro-titulo">Misión</h1>
             <div className="cuadro-info">
               <p className="cuadro-parrafo">
-                Brindar un servicio integral, personalizado y de calidad en el
-                ámbito de capital humano, orientado a satisfacer tus necesidades
-                y expectativas a través de soluciones que aporten valor a tus
-                proyectos
+                Brindar un servicio personalizado y de calidad en el ámbito de
+                capital humano, orientado a satisfacer tus necesidades y
+                expectativas a través de soluciones que aporten valor a tus
+                proyectos enmarcado en el conocimiento del mercado y la agilidad
+                de los procesos acompañándote de manera integral.
               </p>
             </div>
           </div>
@@ -46,7 +47,7 @@ const SobreNosotros = () => {
             <h1 className="cuadro-titulo">Visión</h1>
             <div className="cuadro-info">
               <p className="cuadro-parrafo">
-                Reconocimiento multiculturalmente por nuestra capacidad de
+                Ser reconocidos multiculturalmente por nuestra capacidad de
                 apoyar tus necesidades de capital humano, contribuyendo al éxito
                 organizacional y al bienestar de las personas.
               </p>
@@ -60,8 +61,8 @@ const SobreNosotros = () => {
             <h1 className="cuadro-titulo">Valores</h1>
             <div className="cuadro-info">
               <p className="cuadro-parrafo">
-                Basados en la colaboración, el enfoque, la profesionalidad  y la
-                responsabilidad.
+                Se sustentan de acciones de colaboración, enfoque,
+                profesionalidad y resposabilidad.
               </p>
             </div>
           </div>
