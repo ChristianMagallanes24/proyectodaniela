@@ -18,9 +18,8 @@ const Nosotros = () => {
         <div className="nosotros-info">
           <h2 className="nosotros-titulo">Sobre nosotros</h2>
           <p className="nosotros-parrafo">
-            Somos una Organización Global dedicada a brindar Servicios
-            Profesionales de Recursos Humanos de perfiles IT y
-            generalistas,adaptados a la necesidad de cada Cliente. 
+            Somos una organización virtual que se expande a nivel global
+            ofreciendo servicios de capital humano para empresas.
           </p>
           <Link to="/sobreNosotros" className="btn-nosotros">
             Saber mas
@@ -47,10 +46,8 @@ const Nosotros = () => {
       </div>
 
       {/* que ofrecemos que va en el "inicio" */}
-
+      <h1 className="titulo">¿Qué ofrecemos?</h1>
       <div className="que-ofrecemos-container">
-        <h1 className="titulo">¿Qué ofrecemos?</h1>
-
         <div className="que-ofrecemos">
           <div className="que-ofrecemos-card">
             <div className="que-ofrecemos-card-text">
@@ -75,11 +72,6 @@ const Nosotros = () => {
                 administración de personal.
               </p>
             </div>
-            <div className="que-ofrecemos-card-btn-container">
-              <Link to="/servicios" className="que-ofrecemos-btn">
-                Saber mas
-              </Link>
-            </div>
           </div>
 
           <div className="que-ofrecemos-card">
@@ -93,6 +85,9 @@ const Nosotros = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="que-ofrecemos-card-btn-container">
+          <button className="que-ofrecemos-btn">Saber mas</button>
         </div>
       </div>
       <div className="accion">

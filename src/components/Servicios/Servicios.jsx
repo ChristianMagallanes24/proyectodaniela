@@ -16,7 +16,7 @@ const Servicios = () => {
       <header className="header-servicios">
         <div className="header-text">
           <h2 className="servicios-titulo">Nuestros servicios</h2>
-          <p className="servicios-parrafo">Descubre de lo que somos capaces</p>
+         
         </div>
         <div className="header-img-container">
           <img className="header-img" src={miImagen} alt="Mi Imagen" />
