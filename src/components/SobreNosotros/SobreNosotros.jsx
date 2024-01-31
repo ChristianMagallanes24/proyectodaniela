@@ -6,26 +6,40 @@ import myDiamond from "../../assets/Diamond.png";
 import myVision from "../../assets/Vision.png";
 const SobreNosotros = () => {
   return (
-    <div className="sobre-nosotros-container">
-      <div className="sobre-nosotros">
+    <div className="sobre-nosotros-pagina">
+      <div className="sobre-nosotros-container">
         {/* sobre nosotros "pagina" */}
-        <h1 className="descripcion-titulo">Sobre nosotros</h1>
-        <div className="descripcion">
-          <p className="descripcion-parrafo">
-            Somos una organización virtual que se expande a nivel global
-            ofreciendo servicios de capital humano para empresas. Nos respaldan
-            14 años en el sector de capital humano dedicados a brindar servicios
-            profesionales. Principalmente proveemos perfiles de colaboradores
-            para aumentar el valor de tus experiencias como soluciones para
-            mejorar tus estrategias en un marco de agilidad y disrupción.
-          </p>
-        </div>
-      </div>
+        <div className="sobre-nosotros-descripcion">
+          {/* sobre nosotros primera parte */}
 
-      <div className="cuadros">
-        {/* correjir lo siguiente para que quede bien estructurado */}
-        <div className="lol">
-          <img className="img-cuadro" src={myGoals} alt="xd" />
+          <h1 className="descripcion-titulo">Sobre nosotros</h1>
+          <div className="descripcion">
+            <p className="descripcion-parrafo">
+              Somos una organización virtual que se expande a nivel global
+              ofreciendo servicios de capital humano para empresas. Nos
+              respaldan 14 años en el sector de capital humano dedicados a
+              brindar servicios profesionales. Principalmente proveemos perfiles
+              de colaboradores para aumentar el valor de tus experiencias como
+              soluciones para mejorar tus estrategias en un marco de agilidad y
+              disrupción.
+            </p>
+          </div>
+        </div>
+        <div className="contenedor-lol">
+          <div className="lol">
+            <img className="img-cuadro" src={myGoals} alt="xd" />
+          </div>
+          <div className="lol">
+            <img className="img-cuadro" src={myVision} alt="xd" />
+          </div>
+          <div className="lol">
+            <img className="img-cuadro" src={myDiamond} alt="xd" />
+          </div>
+        </div>
+
+        <div className="cuadros">
+          {/* correjir lo siguiente para que quede bien estructurado */}
+
           <div className="cuadro">
             <h1 className="cuadro-titulo">Misión</h1>
             <div className="cuadro-info">
@@ -37,12 +51,9 @@ const SobreNosotros = () => {
                 de los procesos acompañándote de manera integral.
               </p>
             </div>
+            {/*lo de arriba */}
           </div>
-          {/*lo de arriba */}
-        </div>
 
-        <div className="lol">
-          <img className="img-cuadro" src={myVision} alt="xd" />
           <div className="cuadro">
             <h1 className="cuadro-titulo">Visión</h1>
             <div className="cuadro-info">
@@ -53,23 +64,21 @@ const SobreNosotros = () => {
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="lol">
-          <img className="img-cuadro" src={myDiamond} alt="xd" />
           <div className="cuadro">
             <h1 className="cuadro-titulo">Valores</h1>
             <div className="cuadro-info">
               <p className="cuadro-parrafo">
                 Se sustentan de acciones de colaboración, enfoque,
-                profesionalidad y resposabilidad.
+                profesionalidad y responsabilidad.
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

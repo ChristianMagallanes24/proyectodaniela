@@ -7,68 +7,55 @@ import "../Footer/Footer.scss";
 
 const Footer = () => {
   return (
-    <>
-    <div className="footer-titulo-container">
-    <h3 className="footer-titulo">¡Seguinos!</h3>
-    </div>
-     {/* footer contenedor padre */}
-      <div id="footer-container">
-      
-      {/*contenedor para el titulo del footer*/}
-     
-     
-     
+    <footer className="footer">
+      {/* footer contenedor padre */}
 
-      
-         {/* contenedor padre para los iconos */}
-       
-         {/* contenedor que contiene los iconos */}
-           <div className="iconos">
-           <div className="icons">
-           <a
-              href="https://web.facebook.com/danielavincenziniHR?_rdc=1&_rdr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={fb} alt="logo facebook" />
-            </a>
-
-            <a
-              href="https://www.instagram.com/danielavincenzini/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img  src={insta} alt="logo instagram" />
-            </a>
-            
-            <a
-              href="https://www.linkedin.com/company/daniela-vincenzini-rrhh/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={lin} alt="logo linkedin" />
-            </a>
-           </div>
-           </div>
-
-           
-           
-           
-            <h4 className="footer-info">talentos@dvincenzini.com</h4>
-           
-            
-          </div>
-          
-          <div>
-          
-
+      <div className="footer-iconos-mail">
+        {/*  contenedor titulo */}
+        <div>
+          <h3 className="footer-titulo">¡Seguinos!</h3>
         </div>
-        <div className="text">
-          <img className="logo" src={logo} alt="logo daniela vincenzini" />
-          <h5>©2024 por Daniela Vincenzini RRHH</h5>
+
+        {/*contenedor para las redes*/}
+        <div className="icons">
+          <a
+            href="https://web.facebook.com/danielavincenziniHR?_rdc=1&_rdr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={fb} alt="logo facebook" />
+          </a>
+
+          <a
+            href="https://www.instagram.com/danielavincenzini/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={insta} alt="logo instagram" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/daniela-vincenzini-rrhh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={lin} alt="logo linkedin" />
+          </a>
         </div>
-      
-    </>
+
+        {/*contenedor para el mail*/}
+
+        <div>
+          <h4 className="footer-info">talentos@dvincenzini.com</h4>
+        </div>
+      </div>
+
+      {/*contenedor para el logo final*/}
+      <div className="text">
+        <img className="logo" src={logo} alt="logo daniela vincenzini" />
+        <h5>©2024 por Daniela Vincenzini RRHH</h5>
+      </div>
+    </footer>
   );
 };
 export default Footer;
