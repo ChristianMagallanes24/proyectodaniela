@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import "../SobreNosotros/SobreNosotros.scss";
 import Footer from "../Footer/footer";
 import myGoals from "../../assets/goals.png";
 import myDiamond from "../../assets/Diamond.png";
 import myVision from "../../assets/Vision.png";
 const SobreNosotros = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Hacer scroll al principio de la página al cargar el componente
+  }, []);
+
   return (
     <div className="sobre-nosotros-pagina">
       <div className="sobre-nosotros-container">

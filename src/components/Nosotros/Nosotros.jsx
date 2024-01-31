@@ -3,6 +3,7 @@ import myGoals from "../../assets/goals.png";
 import myDiamond from "../../assets/Diamond.png";
 import myVision from "../../assets/Vision.png";
 import myNosotros from "../../assets/nosotros.jpeg";
+import { Link } from "react-router-dom";
 
 const Nosotros = () => {
   return (
@@ -20,7 +21,9 @@ const Nosotros = () => {
             Somos una organización virtual que se expande a nivel global
             ofreciendo servicios de capital humano para empresas.
           </p>
-          <button className="btn-nosotros">Saber más</button>
+          <Link to="/sobreNosotros" className="btn-nosotros">
+            Saber mas
+          </Link>
         </div>
       </div>
 

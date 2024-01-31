@@ -1,13 +1,17 @@
 // Servicios.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Footer/footer";
 import miImagen from "../../assets/imgservicios.png";
 import miUnion from "../../assets/union.svg";
 import miCapa from "../../assets/capa.svg";
 import miLibro from "../../assets/libro.svg";
+
 import "./_Servicios.scss";
 
 const Servicios = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="servicios-container">
       <header className="header-servicios">

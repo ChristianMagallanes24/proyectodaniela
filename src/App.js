@@ -13,18 +13,16 @@ import Contacto from "./components/Contacto/Contacto";
 function App() {
   return (
     <div className="App">
-    <Router>
-      
+      <Router>
         <Navbar />
         <Routes>
           {/* Agrega una ruta específica para la página de inicio */}
           <Route path="/" element={<Inicio />} />
           <Route path="/servicios" element={<Servicios />} />
-          <Route path="/Sobrenosotros" element={<SobreNosotros />} />
+          <Route path="/sobreNosotros" element={<SobreNosotros />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
-      
-    </Router>
+      </Router>
     </div>
   );
 }
