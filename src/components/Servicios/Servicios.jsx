@@ -42,7 +42,7 @@ const Servicios = () => {
             <img src={miCapa} alt="Mi Imagen" />
             <div>
               <h3 className="servicio-titulo">
-                Consultoría organizaicional y capital humano
+                Consultoría organizacional y capital humano
               </h3>
               <p className="servicio-parrafo">
                 Informes psicológicos, grafológicos o por competencias.
