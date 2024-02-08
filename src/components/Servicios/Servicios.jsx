@@ -42,7 +42,7 @@ const Servicios = () => {
             <img src={miCapa} alt="Mi Imagen" />
             <div>
               <h3 className="servicio-titulo">
-                Consultoría organizaicional y capital humano
+                Consultoría organizacional y capital humano
               </h3>
               <p className="servicio-parrafo">
                 Informes psicológicos, grafológicos o por competencias.
@@ -75,7 +75,13 @@ const Servicios = () => {
           <h3 className="accion-titulo">
             ¡COMIENZA AHORA A CAMBIAR TU FUTURO!
           </h3>
-          <button className="accion-btn">Postularme</button>
+          <a
+            href=" https://docs.google.com/forms/d/e/1FAIpQLSe7O8i2naJoDF9AyqEP_ikHXwh8_zQku_-9Hf59-MdJfboZgA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="accion-btn">Postularme</button>
+          </a>
         </div>
       </div>
       <Footer />

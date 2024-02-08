@@ -20,7 +20,14 @@ const Header = () => {
           </div>
         </div>
         {/* <button className='btn-header'>Quiero contactarme</button> */}
-        <button className="btn-header">Quiero contactarme</button>
+
+        <a
+          href="https://calendly.com/daniela_reuniones/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn-header">Quiero contactarme</button>
+        </a>
       </div>
       {/* imagen del header */}
       <div className="img-header-container">

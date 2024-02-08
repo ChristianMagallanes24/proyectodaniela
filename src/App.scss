@@ -1,9 +1,9 @@
 // App.scss
 @import "./Medidas.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
 
 * {
   padding: 0;
@@ -12,21 +12,21 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  a {
+    text-decoration: none;
+  }
 }
 
 .home {
   margin: 0 auto;
   background: url("./assets/test.svg") left top no-repeat,
     url("./assets/testt.svg") right top no-repeat;
-  background-size: 603px auto, 187px auto; 
+  background-size: 603px auto, 187px auto;
   background-position: 0px 500px, calc(100% - 0px) 500px;
-  @include desktop1{
+  @include desktop1 {
     background-size: auto;
-  } 
-  @include mobile{
+  }
+  @include mobile {
     background: none;
   }
-  
 }
-
-

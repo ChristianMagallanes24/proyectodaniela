@@ -1,7 +1,7 @@
 import React from "react";
-import myGoals from "../../assets/goals.png";
-import myDiamond from "../../assets/Diamond.png";
-import myVision from "../../assets/Vision.png";
+import horn from "../../assets/horn.png";
+import frame from "../../assets/Frame.png";
+
 import myNosotros from "../../assets/nosotros.jpeg";
 import { Link } from "react-router-dom";
 
@@ -27,27 +27,31 @@ const Nosotros = () => {
         </div>
       </div>
 
-      <div className="nosotros-iconos-container">
-        <div className="nosotros-iconos">
-          <img src={myGoals} alt="xd" />
-          <h3 className="iconos-titulo">Mision</h3>
-          <p className="nosotros-iconos-p">
-            Aportar valor a procesos de capital humano.
-          </p>
+      {/* información sobre datos y experiencia */}
+
+      <div className="nosotros-datos-container">
+        <div className="nosotros-numeros">
+          <div className="nosotros-numeros-titulo">
+            {" "}
+            Los números hablan sobre nosotros...
+          </div>
+          <div className="seisk">+ 6K</div>
+          <div className="nosotros-numeros-descripcion">
+            De personas reclutadas en 14 años de experiencia que nos avalan
+          </div>
         </div>
-        <div className="nosotros-iconos">
-          <img src={myDiamond} alt="xd" />
-          <h3 className="iconos-titulo">Vision</h3>
-          <p className="nosotros-iconos-p">
-            Contribuir al éxito organizacional y de las personas.
-          </p>
-        </div>
-        <div className="nosotros-iconos">
-          <img src={myVision} alt="xd" />
-          <h3 className="iconos-titulo">Valores</h3>
-          <p className="nosotros-iconos-p">
-            Colaboración, enfoque, profesionalidad y responsabilidad.
-          </p>
+
+        <div className="nosotros-puestos">
+          <div className="nosotros-puestos-arriba">
+            <button className="btn-puestos">#IngenieroSoftware</button>
+            <button className="btn-puestos">#AnalisisDeDatos</button>
+            <img className="puntitos" src={frame} alt="imagen decorativa" />
+          </div>
+
+          <div className="nosotros-puestos-abajo">
+            <img src={horn} alt="imagen bocina" />
+            <button className="btn-puestos">#DiseñoUXUI</button>
+          </div>
         </div>
       </div>
 
@@ -70,7 +74,7 @@ const Nosotros = () => {
           <div className="que-ofrecemos-card">
             <div className="que-ofrecemos-card-text">
               <h1 className="que-ofrecemos-titulo">
-                Consultoría organizaicional y recursos humanos
+                Consultoría organizacional y recursos humanos
               </h1>
               <p className="que-ofrecemos-parrafo">
                 Asesoría especializada en atracción del talento, onboarding,
@@ -101,7 +105,14 @@ const Nosotros = () => {
           <h3 className="accion-titulo">
             ¡COMIENZA AHORA A CAMBIAR TU FUTURO!
           </h3>
-          <button className="accion-btn">Postularme</button>
+
+          <a
+            href=" https://docs.google.com/forms/d/e/1FAIpQLSe7O8i2naJoDF9AyqEP_ikHXwh8_zQku_-9Hf59-MdJfboZgA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="accion-btn">Postularme</button>
+          </a>
         </div>
       </div>
     </div>

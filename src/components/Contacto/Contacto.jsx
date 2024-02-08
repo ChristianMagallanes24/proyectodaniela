@@ -18,7 +18,13 @@ const Contacto = () => {
         <div className="contacto-info-redes">
           <div className="contacto-info">
             <h2 className="info-titulo">¡Da el primer paso!</h2>
-            <button className="contacto-btn">Quiero contactarme</button>
+            <a
+              href="https://calendly.com/daniela_reuniones/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="contacto-btn">Quiero contactarme</button>
+            </a>
           </div>
 
           <div className="footer-iconos-mail">
