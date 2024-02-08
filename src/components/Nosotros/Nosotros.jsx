@@ -97,7 +97,8 @@ const Nosotros = () => {
           </div>
         </div>
         <div className="que-ofrecemos-card-btn-container">
-          <button className="que-ofrecemos-btn">Saber mas</button>
+          <Link to={"/Servicios"} style={{ textDecoration: "none" }}>
+          <button className="que-ofrecemos-btn">Saber mas</button></Link>
         </div>
       </div>
       <div className="accion">
