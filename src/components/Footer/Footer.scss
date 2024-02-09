@@ -1,3 +1,5 @@
+@import "../../_Medidas.scss";
+
 .footer {
   display: flex;
 
@@ -6,6 +8,18 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+
+  @include tablet {
+    gap: 5px;
+  }
+
+  @include tablet {
+    gap: 3px;
+  }
+
+  @include mobile {
+    gap: 2px;
+  }
 }
 .footer-iconos-mail {
   display: flex;
@@ -35,8 +49,19 @@
     align-items: center;
     flex-shrink: 0;
   }
-}
 
+  @include tablet {
+    width: 80%;
+  }
+
+  @include tablet2 {
+    width: 90%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
 .text {
   width: 100%;
   background-color: #008e81;
