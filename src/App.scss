@@ -23,6 +23,7 @@ body {
     url("./assets/testt.svg") right top no-repeat;
   background-size: 603px auto, 187px auto;
   background-position: 0px 500px, calc(100% - 0px) 500px;
+
   @include desktop1 {
     background-size: auto;
   }

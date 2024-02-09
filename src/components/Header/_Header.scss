@@ -6,8 +6,11 @@
   height: 681px;
   padding: 0px 142px;
   flex-wrap: wrap-reverse;
-  background-repeat: no-repeat;
-
+  
+  @include desktop1 {
+   height: auto;
+    
+  }
   @include mobile {
     flex-direction: column;
     justify-content: center;
@@ -15,6 +18,7 @@
     width: 100%;
     height: auto;
     padding: 0;
+    
   }
   .header-info {
     display: flex;
@@ -112,8 +116,13 @@
 
   .img-header-container {
     width: 509px;
+    height: 594px;
     flex-shrink: 0;
     align-self: stretch;
+    @include desktop1 {
+      width: 459px;
+    
+    }
     @include mobile {
       align-self: center;
       margin-top: 39px;
@@ -121,6 +130,9 @@
     }
     .header-img {
       width: 100%;
+      @include desktop1 {
+        width: 100%;
+      }
     }
   }
 }

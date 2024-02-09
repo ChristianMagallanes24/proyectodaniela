@@ -1,7 +1,9 @@
 import React from "react";
 import horn from "../../assets/horn.png";
 import frame from "../../assets/Frame.png";
-
+import elipse from "../../assets/elipse.png";
+import vectortransp from "../../assets/vectortransp.png";
+import vectortransparente from "../../assets/vectortransparente.png";
 import myNosotros from "../../assets/nosotros.jpeg";
 import { Link } from "react-router-dom";
 
@@ -27,79 +29,81 @@ const Nosotros = () => {
         </div>
       </div>
 
-      {/* información sobre datos y experiencia */}
+      {/* información sobre datos y perfiles */}
 
       <div className="nosotros-datos-container">
         <div className="nosotros-numeros">
-          <div className="nosotros-numeros-titulo">
-            {" "}
-            Los números hablan sobre nosotros...
-          </div>
-          <div className="seisk">+ 6K</div>
+          <img src={vectortransp} alt="vector fondo" />
+          <div className="anios">14 años</div>
           <div className="nosotros-numeros-descripcion">
-            De personas reclutadas en 14 años de experiencia que nos avalan
+            De experiencia reclutando perfiles que nos avalan
           </div>
         </div>
 
         <div className="nosotros-puestos">
           <div className="nosotros-puestos-arriba">
-            <button className="btn-puestos">#IngenieroSoftware</button>
-            <button className="btn-puestos">#AnalisisDeDatos</button>
+            <div className="nosotros-puestos-titulo">
+              <h4>Perfiles IT</h4>
+            </div>
+
+            <button className="btn-puestos">#Ciberseguridad</button>
+            <button className="btn-puestos">UXUI</button>
+            <button className="btn-puestos">#AgileCoach</button>
+            <button className="btn-puestos">#SoftwareArchitects</button>
+            <button className="btn-puestos">#IA</button>
+            <button className="btn-puestos">#Developers</button>
             <img className="puntitos" src={frame} alt="imagen decorativa" />
           </div>
 
           <div className="nosotros-puestos-abajo">
-            <img src={horn} alt="imagen bocina" />
-            <button className="btn-puestos">#DiseñoUXUI</button>
+            <div className="nosotros-puestos-titulo">
+              <h4>Perfiles Generalistas</h4>
+            </div>
+            <button className="btn-puestos">#Comerciales</button>
+            <button className="btn-puestos">#Analistas</button>
+            <button className="btn-puestos">#Administrativos</button>
+            <button className="btn-puestos">#Secretarios</button>
+            <button className="btn-puestos">#Docentes</button>
+            <button className="btn-puestos">#LideresDeAreas</button>
           </div>
         </div>
       </div>
 
-      {/* que ofrecemos que va en el "inicio" */}
-      <h1 className="titulo">¿Qué hacemos?</h1>
-      <div className="que-ofrecemos-container">
-        <div className="que-ofrecemos">
-          <div className="que-ofrecemos-card">
-            <div className="que-ofrecemos-card-text">
-              <h1 className="que-ofrecemos-titulo">
-                Reclutamiento y Selección
-              </h1>
-              <p className="que-ofrecemos-parrafo">
-                Definimos el perfil del colaborador, reconocemos las
-                necesidades e iniciamos la búsqueda.
-              </p>
-            </div>
-          </div>
-
-          <div className="que-ofrecemos-card">
-            <div className="que-ofrecemos-card-text">
-              <h1 className="que-ofrecemos-titulo">
-                Consultoría organizacional y recursos humanos
-              </h1>
-              <p className="que-ofrecemos-parrafo">
-                Asesoría especializada en atracción del talento, onboarding,
-                capacitación, desarrollo, clima, felicidad laboral,
-                administración de personal.
-              </p>
-            </div>
-          </div>
-
-          <div className="que-ofrecemos-card">
-            <div className="que-ofrecemos-card-text">
-              <h1 className="que-ofrecemos-titulo">
-                Consulta inicial e intervensiones sistémicas
-              </h1>
-              <p className="que-ofrecemos-parrafo">
-                Estamos para escucharte, ayudarte con los procesos que impliquen
-                decisiones importantes, clima, liderazgo.
-              </p>
-            </div>
-          </div>
+      {/* que acemos div */}
+      <div className="que-hacemos-container">
+        <div className="que-hacemos-izq">
+          <img
+            className="vector-izq-fondo"
+            src={frame}
+            alt="imagen decorativa"
+          />
         </div>
-        <div className="que-ofrecemos-card-btn-container">
-          <button className="que-ofrecemos-btn">Saber mas</button>
+
+        <div className="que-hacemos-central">
+          <img className="fondo-elipse" src={elipse} alt="imagen decorativa" />
+          <h1 className="titulo">¿Qué hacemos?</h1>
+          <p>
+            En el mundo actual, la tecnología es un factor clave para el éxito
+            de cualquier empresa. Por eso, desde nuestra organización, estamos
+            siempre buscando a los mejores profesionales del sector, que nos
+            ayuden a innovar y a ofrecer soluciones de calidad a nuestros
+            clientes.
+          </p>
+
+          <Link to={"/Servicios"} style={{ textDecoration: "none" }}>
+            <button className="btn-nosotros">Saber mas</button>
+          </Link>
+        </div>
+
+        <div className="que-hacemos-der">
+          <img
+            className="vector-der-fondo"
+            src={vectortransparente}
+            alt="imagen decorativa"
+          />
         </div>
       </div>
+
       <div className="accion">
         <div className="accion-contenido">
           <h3 className="accion-titulo">

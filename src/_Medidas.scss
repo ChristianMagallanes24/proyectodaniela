@@ -1,26 +1,23 @@
-// Medidas.scss
-
 @mixin desktop1 {
-    @media screen and (min-width: 1300px) {
-      @content;
-    }
+  @media screen and (max-width: 1386px) {
+    @content;
   }
-  
-  @mixin tablet {
-    @media screen and (max-width: 800px) {
-      @content;
-    }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 992px) {
+    @content;
   }
-  
-  @mixin tablet2 {
-    @media screen and (max-width: 600px) {
-      @content;
-    }
+}
+
+@mixin tablet2 {
+  @media screen and (max-width: 768px) {
+    @content;
   }
-  
-  @mixin mobile {
-    @media screen and (max-width: 360px) {
-      @content;
-    }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
   }
-  
+}
