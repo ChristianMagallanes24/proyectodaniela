@@ -72,7 +72,7 @@ const SobreNosotros = () => {
             <div className="titulo-container3">
             
             <h1 className="cuadro-titulo3">Valores</h1>
-            <img className="cuadro-img3" src={myDiamond} alt="a" />
+            <img className="cuadro-img2" src={myDiamond} alt="a" />
             </div>
             <div className="cuadro-info">
               <p className="cuadro-parrafo">

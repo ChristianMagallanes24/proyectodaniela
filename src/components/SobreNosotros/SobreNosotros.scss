@@ -97,7 +97,7 @@
       .titulo-container3{
         display: flex;
         margin-bottom: 30px;
-        justify-content: end;
+        justify-content: start;
         @include mobile{
           justify-content: center;
         }
@@ -114,12 +114,20 @@
           display: flex;
           align-items: center;
           position: relative;
-          right: 20px;
+          left: 50px;
           @include mobile{
             right: -4%;
           }
            
           }
+          .cuadro-img2 {
+            position: relative;
+            right: 205px;
+            filter: opacity(0.7);
+            @include mobile{
+              left: 4%;
+            }
+         }
         }
       .titulo-container2{
         display: flex;
@@ -149,7 +157,7 @@
           }
           .cuadro-img3 {
             position: relative;
-            right: 39px;
+            right: 33px;
             filter: opacity(0.7);
             @include mobile{
               right: -1%;
