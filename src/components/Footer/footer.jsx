@@ -23,7 +23,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={fb} alt="logo facebook" />
+            <img className="footer-icons" src={fb} alt="logo facebook" />
           </a>
 
           <a
@@ -31,7 +31,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={insta} alt="logo instagram" />
+            <img className="footer-icons" src={insta} alt="logo instagram" />
           </a>
 
           <a
@@ -39,7 +39,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={lin} alt="logo linkedin" />
+            <img className="footer-icons" src={lin} alt="logo linkedin" />
           </a>
         </div>
 

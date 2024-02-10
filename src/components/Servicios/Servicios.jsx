@@ -26,7 +26,7 @@ const Servicios = () => {
       <section className="servicios-section">
         <div className="servicios">
           <div className="servicio">
-            <img src={miUnion} alt="Mi Imagen" />
+            <img className="servicio-img" src={miUnion} alt="Mi Imagen" />
             <div>
               <h3 className="servicio-titulo">Servicios de recruiting</h3>
               <p className="servicio-parrafo">
@@ -39,7 +39,7 @@ const Servicios = () => {
             </div>
           </div>
           <div className="servicio">
-            <img src={miCapa} alt="Mi Imagen" />
+            <img className="servicio-img" src={miCapa} alt="Mi Imagen" />
             <div>
               <h3 className="servicio-titulo">
                 Consultoría organizacional y capital humano
@@ -53,7 +53,7 @@ const Servicios = () => {
             </div>
           </div>
           <div className="servicio">
-            <img src={miLibro} alt="Mi Imagen" />
+            <img className="servicio-img" src={miLibro} alt="Mi Imagen" />
             <div>
               <h3 className="servicio-titulo">
                 Asesoramiento y coaching laboral

@@ -7,6 +7,11 @@
     url("./fondo2.svg") right top no-repeat;
   background-size: 246px auto, 194px auto;
   background-position: 0px 200px, calc(100% - 0px) 100px;
+  @include mobile{
+    background-size: 76px auto, 114px auto;
+    background-position: 0px 950px, calc(100% - 0px) 310px;
+    
+  }
   .sobre-nosotros-descripcion {
     display: flex;
     //padding: 0px 33.75px 56.25px 33.75px;
@@ -41,7 +46,6 @@
       @include tablet{
         width: 90%;
         height: auto;
-       
       }
       @include mobile{
         width: 120%;
@@ -64,7 +68,8 @@
           min-width: 100%;
         }
         @include mobile{
-          font-size: 24px;
+          padding: 0px 7px;
+          font-size: 19px;
           width: auto;
         }
       }
@@ -116,7 +121,7 @@
           position: relative;
           left: 50px;
           @include mobile{
-            right: -4%;
+            right: -5%;
           }
            
           }
@@ -151,7 +156,7 @@
           position: relative;
           right: 20px;
           @include mobile{
-            right: -4%;
+            right: -10%;
           }
            
           }
@@ -196,7 +201,7 @@
           right: 20px;
           left: 0px;
           @include mobile{
-            left:10%;
+            left:11%;
           }
           
          }
@@ -267,6 +272,9 @@
             font-family: Montserrat;
             font-weight: 700;
             font-size: 28px;
+            @include mobile{
+              font-size: 15px;
+            }
           }
         }
         

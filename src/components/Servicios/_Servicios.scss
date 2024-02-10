@@ -1,3 +1,4 @@
+@import "../../Medidas";
 .servicios-container {
   .header-servicios {
     background: linear-gradient(92deg, #018f83 -0.47%, #00c6a2 44.65%);
@@ -7,12 +8,21 @@
     overflow: hidden;
     text-align: center;
     height: 532px;
+    @include mobile{
+        height: 320px;
+    }
     .header-img-container {
       width: 502px;
       height: 517px;
 
       .header-img {
         height: 120%;
+        @include mobile{
+          height: 70%;
+          position: relative;
+          top: 90px;
+          right: 1px;
+        }
       }
     }
 
@@ -32,8 +42,14 @@
         font-weight: 700;
         line-height: 61.04px;
         text-align: center;
+        @include mobile{
+          position: relative;
+          left: 30%;
+          font-size: 38px;
+          font-weight: 700;
+        line-height: 32.04px;
+        }
 
-        /* 100% */
       }
 
       .servicios-parrafo {
@@ -54,7 +70,7 @@
   .servicios-section {
     display: flex;
     justify-content: center;
-
+   
     .servicios {
       display: flex;
       width: 1125px;
@@ -66,21 +82,43 @@
       gap: 16px 27px;
       flex-shrink: 0;
       flex-wrap: wrap;
+      @include mobile{
+        text-align: center;
+        
+        gap: 0px;
+        width: 100%;
+        height: auto;
+        padding: 20px 20px;
+      }
       .servicio {
         display: flex;
         gap: 27px;
+        @include mobile{
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          flex-direction: column;
+        }
+        .servicio-img{
+          @include mobile{
+            width: 80px;
+          }
+        }
+      
       }
       .servicio-titulo {
         color: var(--Colores-diseo-alta-Color-Primario, #00cba6);
         font-feature-settings: "clig" off, "liga" off;
-
-        /* Tipografias diseño alta/Heading 4 Bold */
         font-family: Montserrat;
         font-size: 31.25px;
         font-style: normal;
         font-weight: 700;
         line-height: 31.25px;
-        /* 100% */
+       @include mobile{
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 31.25px;
+       }
       }
 
       .servicio-parrafo {
@@ -107,16 +145,21 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-
+    @include mobile{
+      width: 100%;
+      height: 150px;
+    
+    }
     .accion-contenido {
       display: flex;
-
       justify-content: center;
       align-items: center;
       align-content: center;
       gap: 33px;
       flex-wrap: wrap;
-
+      @include mobile{
+        gap: 5px;
+      }
       .accion-titulo {
         color: var(--Colores-diseo-alta-Blanco, #fff);
         text-align: center;
@@ -129,9 +172,18 @@
         font-weight: 700;
         line-height: 39.06px;
         /* 100% */
+        @include mobile{
+          font-size: 22px;
+          width: 300px;
+          line-height: 21px;
+        }
       }
 
       .accion-btn {
+        @include mobile{
+          font-size: 22px;
+          padding: 5px 10px;
+        }
         .accion-btn {
           display: flex;
           padding: 16px 23px;
@@ -151,8 +203,10 @@
           font-weight: 700;
           line-height: 31.25px; /* 100% */
           border: hidden;
+         
           a {
             text-decoration: none;
+            
           }
         }
       }
