@@ -39,7 +39,7 @@ const SobreNosotros = () => {
           <div className="cuadro">
             
             <div className="titulo-container">
-            <h1 className="cuadro-titulo">Misión</h1>
+            <h1 className="cuadro-titulo1">Misión</h1>
             <img className="cuadro-img" src={myGoals} alt="a" />
             </div>
             <div className="cuadro-info">
@@ -69,10 +69,10 @@ const SobreNosotros = () => {
           </div>
 
           <div className="cuadro">
-            <div className="titulo-container">
-            <img className="cuadro-img3" src={myDiamond} alt="a" />
-            <h1 className="cuadro-titulo">Valores</h1>
+            <div className="titulo-container3">
             
+            <h1 className="cuadro-titulo3">Valores</h1>
+            <img className="cuadro-img3" src={myDiamond} alt="a" />
             </div>
             <div className="cuadro-info">
               <p className="cuadro-parrafo">
