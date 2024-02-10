@@ -57,6 +57,7 @@ const Nosotros = () => {
 
           <div className="nosotros-puestos-abajo">
             <div className="nosotros-puestos-titulo">
+              <img src={horn} alt="imagen bocina"></img>
               <h4>Perfiles Generalistas</h4>
             </div>
             <button className="btn-puestos">#Comerciales</button>
@@ -90,8 +91,8 @@ const Nosotros = () => {
             clientes.
           </p>
 
-          <Link to={"/Servicios"} style={{ textDecoration: "none" }}>
-            <button className="btn-nosotros">Saber mas</button>
+          <Link to="/Servicios" className="btn-nosotros">
+            Saber mas
           </Link>
         </div>
 
