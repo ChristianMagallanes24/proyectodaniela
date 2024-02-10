@@ -8,9 +8,7 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-<<<<<<< HEAD
-  
-=======
+
 
   @include tablet {
     gap: 5px;
@@ -23,7 +21,7 @@
   @include mobile {
     gap: 2px;
   }
->>>>>>> b0ea05b92e9893893730a1fc66d400e8b2c91130
+
 }
 .footer-iconos-mail {
   display: flex;
