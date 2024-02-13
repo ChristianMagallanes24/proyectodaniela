@@ -82,8 +82,16 @@
       gap: 16px 27px;
       flex-shrink: 0;
       flex-wrap: wrap;
+      @include desktop1{
+        width: 90%;
+      }
+      @include tablet{
+        width: 80%;
+       
+        height: auto;
+        padding: 20px 20px;
+      }
       @include mobile{
-        text-align: center;
         
         gap: 0px;
         width: 100%;
@@ -91,16 +99,26 @@
         padding: 20px 20px;
       }
       .servicio {
+        text-align: start;
         display: flex;
         gap: 27px;
+        width: 100%;
+        @include tablet2{
+          flex-direction: column;
+          align-items: center;
+        }
         @include mobile{
           justify-content: center;
           align-items: center;
           width: 100%;
           flex-direction: column;
+          padding: 0px 20px;
         }
         .servicio-img{
           @include mobile{
+            width: 80px;
+          }
+          @include tablet2{
             width: 80px;
           }
         }
@@ -118,13 +136,14 @@
         font-size: 25px;
         font-weight: 700;
         line-height: 31.25px;
+        text-align: center;
        }
       }
 
       .servicio-parrafo {
         color: var(--Colores-diseo-alta-Negro, #000);
         font-feature-settings: "clig" off, "liga" off;
-
+        text-align: start;
         /* Body hero */
         font-family: Montserrat;
         font-size: 22px;
@@ -132,6 +151,24 @@
         font-weight: 400;
         line-height: 26px;
         /* 100% */
+        @include mobile{
+          font-size: 18px;
+        }
+      }
+      .servicio-parrafo2 {
+        color: var(--Colores-diseo-alta-Negro, #000);
+        font-feature-settings: "clig" off, "liga" off;
+        text-align: start;
+        /* Body hero */
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 100% */
+        @include mobile{
+          font-size: 18px;
+        }
       }
     }
   }

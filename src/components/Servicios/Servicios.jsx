@@ -44,11 +44,11 @@ const Servicios = () => {
               <h3 className="servicio-titulo">
                 Consultoría organizacional y capital humano
               </h3>
-              <p className="servicio-parrafo">
-                Informes psicológicos, grafológicos o por competencias.
-                Valoración de puestos. Sistemas de beneficios y compensaciones.
-                Formación y desarrollo. Nóminas de seguridad social.
-                Reestructuración organizacional. Cápsulas HR new.
+              <p className="servicio-parrafo2">
+                <li>Informes psicológicos, grafológicos o por competencias.</li>
+                <li>Valoración de puestos. Sistemas de beneficios y compensaciones.</li>
+                <li>Formación y desarrollo. Nóminas y seguridad social.</li>
+                <li>Reestructuración organizacional. Cápsulas HR new</li>
               </p>
             </div>
           </div>
