@@ -7,6 +7,10 @@
     url("./fondo2.svg") right top no-repeat;
   background-size: 246px auto, 194px auto;
   background-position: 0px 200px, calc(100% - 0px) 100px;
+  @include desktop1{
+    background-size: 18% auto, 15% auto;
+    background-position: 0px 200px, calc(100% - 0px) 100px;
+  }
   @include mobile{
     background: url("./PHOTOS.svg") left top no-repeat,
     url("./Vector_1.svg") right top no-repeat;
