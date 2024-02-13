@@ -55,7 +55,7 @@
         height: auto;
       }
       @include mobile{
-        width: 120%;
+        width: 100%;
       }
       .descripcion-parrafo {
         color: var(--Colores-diseo-alta-Negro, #000);
@@ -67,20 +67,14 @@
         font-style: normal;
         font-weight: 400;
         line-height: 31.25px; /* 100% */
-        
-       
-        align-self: stretch;
         @include tablet{
           font-size: 30px ;
-          min-width: 100%;
+         
         }
-        @include mobile{
-          padding: 0px 7px;
-          font-size: 19px;
-          width: auto;
-          text-align: center;
-          padding: 0px 50px;
-        }
+      @include mobile{
+        font-size: 20px;
+       padding: 0px 10px;
+      }
       }
     }
   }
