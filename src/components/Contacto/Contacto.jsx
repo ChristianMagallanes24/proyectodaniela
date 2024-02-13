@@ -23,7 +23,7 @@ const Contacto = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="contacto-btn">Postularme</button>
+              <button className="postularme-btn">Postularme</button>
             </a>
             <a
               href="https://calendly.com/daniela_reuniones/30min"

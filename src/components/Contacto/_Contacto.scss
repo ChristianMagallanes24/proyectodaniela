@@ -1,13 +1,29 @@
+@import "../../Medidas";
+
 .contacto-body {
   display: flex;
   gap: 60px;
   align-items: center;
+
+  @include mobile {
+    gap: 0px;
+    height: 437px;
+  }
+  .contacto-vector {
+    @include mobile {
+      display: none;
+    }
+  }
   .contacto-info-redes {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
     margin-top: 100px;
+    @include mobile {
+      gap: 0px;
+      margin-top: 20px;
+    }
     .contacto-info {
       display: flex;
       flex-direction: column;
@@ -23,8 +39,14 @@
         font-weight: 700;
         line-height: 40px;
         text-transform: uppercase;
+        @include mobile {
+          font-size: 15.46px;
+          width: 126px;
+          line-height: 30px;
+        }
       }
-      .contacto-btn {
+      .contacto-btn,
+      .postularme-btn {
         color: #fff;
         text-align: center;
         font-feature-settings: "clig" off, "liga" off;
@@ -39,11 +61,21 @@
         align-items: center;
         gap: 10px;
         border-radius: 30px;
-        background: var(--Colores-diseo-alta-Color-Primario, #00cba6);
+        background: var(--Colores-diseo-alta-Negro, #000);
         width: 280px;
-        border: hidden;
+        border: solid var(--Colores-diseo-alta-Negro, #000);
         align-items: center;
         margin-top: 35px;
+        @include mobile {
+          font-size: 9.05px;
+          width: 110px;
+          padding: 0px;
+        }
+      }
+      .postularme-btn {
+        color: var(--Colores-diseo-alta-Color-Primario, #00cba6);
+        background: #fff;
+        border: solid #00cba6;
       }
     }
   }
@@ -51,5 +83,17 @@
     height: 683px;
     width: 534px;
     object-fit: cover;
+    @include mobile {
+      width: 145.8px;
+      height: 169.57;
+      object-fit: contain;
+    }
+  }
+  .icons {
+    img {
+      @include mobile {
+        width: 25px;
+      }
+    }
   }
 }

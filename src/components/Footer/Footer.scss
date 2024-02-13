@@ -9,7 +9,6 @@
   gap: 10px;
   flex-shrink: 0;
 
-
   @include tablet {
     gap: 5px;
   }
@@ -21,7 +20,6 @@
   @include mobile {
     gap: 2px;
   }
-
 }
 .footer-iconos-mail {
   display: flex;
@@ -31,9 +29,10 @@
   justify-content: space-around;
   align-items: center;
   flex-shrink: 0;
-  @include mobile{
+  @include mobile {
     height: auto;
     padding: 10px 10px;
+    height: 100px;
   }
   .footer-titulo {
     color: var(--Colores-diseo-alta-Color-Primario, #363030);
@@ -45,8 +44,11 @@
     font-style: normal;
     font-weight: 700;
     line-height: 39.06px; /* 100% */
-    @include mobile{
-      color: #00CBA6;
+    @include mobile {
+      color: #00cba6;
+      font-size: 9.77px;
+      line-height: 0px;
+      margin-top: 10px;
     }
   }
   .icons {
@@ -56,17 +58,24 @@
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    @include mobile{
+    @include mobile {
       justify-content: center;
       gap: 30px;
-      
+      width: 82.75px;
+      height: 17px;
     }
     .footer-icons {
       width: 50px;
       margin-top: 1rem;
-      @include mobile{
-        width: 30px;
+      @include mobile {
+        width: 20px;
+        margin: 0px;
       }
+    }
+  }
+  .footer-info {
+    @include mobile {
+      font-size: 6px;
     }
   }
 
@@ -89,11 +98,17 @@
   flex-direction: column;
   align-items: center;
   height: 152px;
+  @include mobile {
+    height: 94px;
+  }
+
   .logo {
     width: 90px;
     padding: 10px 0px;
+    @include mobile {
+      width: 43px;
+    }
   }
- 
 
   h5 {
     font-size: 10px;
