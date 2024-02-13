@@ -35,6 +35,7 @@
       flex-shrink: 0;
       @include mobile {
         width: 100%;
+        height: 400px;
       }
       .nosotros-titulo {
         color: var(--Colores-diseo-alta-Negro, #000);
@@ -81,7 +82,7 @@
     align-items: center;
     gap: 10px;
     color: #ffff;
-
+    cursor: pointer;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
 
@@ -93,6 +94,9 @@
     line-height: 24px; /* 120% */
     text-decoration: none;
     border: hidden;
+    @include mobile {
+      height: 30px;
+    }
   }
 
   .nosotros-img-container {
@@ -126,13 +130,28 @@
   margin-top: 30px;
   margin-bottom: 50px;
 
+  @include mobile {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .nosotros-numeros {
     position: relative;
     width: 336px;
     height: 232px;
+    @include mobile {
+      width: 100%;
+      height: 150px;
+    }
 
     .img {
       position: relative;
+      @include mobile {
+        width: 80%;
+        margin: 0 auto;
+      }
     }
     .anios {
       width: 250px;
@@ -164,8 +183,17 @@
     flex-direction: column;
     align-items: center;
 
+    @include mobile {
+      flex-direction: row;
+      width: 100%;
+    }
+
     .nosotros-puestos-arriba {
       margin-bottom: 70px;
+      @include mobile {
+        flex-direction: column;
+        width: 100%;
+      }
     }
 
     .nosotros-puestos-titulo {
@@ -273,6 +301,7 @@
     .btn-nosotros {
       width: 171px;
       height: 46px;
+      z-index: 2;
     }
   }
   .que-hacemos-der {
