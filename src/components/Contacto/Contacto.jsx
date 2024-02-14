@@ -20,7 +20,7 @@ const Contacto = () => {
           <div className="contacto-info">
             <h2 className="info-titulo">¡Da el primer paso!</h2>
             <a
-              href="https://calendly.com/daniela_reuniones/30min"
+              href=" https://docs.google.com/forms/d/e/1FAIpQLSe7O8i2naJoDF9AyqEP_ikHXwh8_zQku_-9Hf59-MdJfboZgA/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >

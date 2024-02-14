@@ -4,6 +4,12 @@
   display: flex;
   gap: 60px;
   align-items: center;
+  width: 100%;
+
+  @include tablet {
+    gap: 0px;
+    width: 100%;
+  }
 
   @include mobile {
     gap: 0px;
@@ -11,6 +17,9 @@
     margin-top: 40px;
   }
   .contacto-vector {
+    @include tablet {
+      display: none;
+    }
     @include mobile {
       display: none;
     }
@@ -21,6 +30,11 @@
     align-items: center;
     gap: 60px;
     margin-top: 100px;
+    @include tablet {
+      width: 300px;
+      gap: 20px;
+    }
+
     @include mobile {
       gap: 0px;
       margin-top: 20px;
@@ -47,6 +61,11 @@
         font-weight: 700;
         line-height: 40px;
         text-transform: uppercase;
+
+        @include tablet {
+          font-size: 30px;
+          width: 300px;
+        }
         @include mobile {
           font-size: 15.46px;
           width: 126px;
@@ -74,6 +93,14 @@
         border: solid var(--Colores-diseo-alta-Negro, #000);
         align-items: center;
         margin-top: 35px;
+
+        @include tablet {
+          font-size: 20px;
+          width: 230px;
+          padding: 10px;
+          margin-top: 20px;
+        }
+
         @include mobile {
           font-size: 9.05px;
           width: 110px;
@@ -92,6 +119,13 @@
     height: 683px;
     width: 534px;
     object-fit: cover;
+    margin-top: 65px;
+
+    @include tablet {
+      height: 583px;
+      width: 400px;
+    }
+
     @include mobile {
       display: none;
     }
@@ -104,6 +138,9 @@
     }
   }
   .footer-iconos-mail {
+    @include tablet {
+      height: 200px;
+    }
     @include mobile {
       margin-left: 150px;
     }
