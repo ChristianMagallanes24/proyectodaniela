@@ -7,7 +7,8 @@
 
   @include mobile {
     gap: 0px;
-    height: 437px;
+    height: 300px;
+    margin-top: 40px;
   }
   .contacto-vector {
     @include mobile {
@@ -23,6 +24,7 @@
     @include mobile {
       gap: 0px;
       margin-top: 20px;
+      width: 180px;
     }
     .contacto-info {
       display: flex;
@@ -30,6 +32,12 @@
       align-items: center;
       width: 400px;
       text-align: center;
+
+      @include mobile {
+        width: 180px;
+
+        margin-bottom: 10px;
+      }
       .info-titulo {
         color: var(--Colores-diseo-alta-Negro, #000);
         font-feature-settings: "clig" off, "liga" off;
@@ -42,7 +50,7 @@
         @include mobile {
           font-size: 15.46px;
           width: 126px;
-          line-height: 30px;
+          line-height: 20px;
         }
       }
       .contacto-btn,
@@ -70,6 +78,7 @@
           font-size: 9.05px;
           width: 110px;
           padding: 0px;
+          margin-top: 10px;
         }
       }
       .postularme-btn {
@@ -84,9 +93,19 @@
     width: 534px;
     object-fit: cover;
     @include mobile {
-      width: 145.8px;
-      height: 169.57;
-      object-fit: contain;
+      display: none;
+    }
+  }
+  .contacto-img-comb {
+    display: none;
+    @include mobile {
+      display: inline-flex;
+      margin-bottom: 120px;
+    }
+  }
+  .footer-iconos-mail {
+    @include mobile {
+      margin-left: 150px;
     }
   }
   .icons {

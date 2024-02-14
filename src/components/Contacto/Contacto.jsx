@@ -1,5 +1,6 @@
 import React from "react";
 import foto from "../../assets/fotocontacto.png";
+import fotocomb from "../../assets/contactocomb.png";
 import vector from "../../assets/Vector.png";
 import "../Contacto/_Contacto.scss";
 import logo from "../../assets/logo(2).png";
@@ -77,6 +78,7 @@ const Contacto = () => {
 
         <div className="contacto-img-container">
           <img className="contacto-img" src={foto} alt="foto" />
+          <img className="contacto-img-comb" src={fotocomb} alt="foto" />
         </div>
       </div>
 
