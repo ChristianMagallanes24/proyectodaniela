@@ -166,11 +166,14 @@
   @include tablet {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 230px;
   }
 
   @include tablet2 {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 230px;
   }
 
@@ -178,6 +181,7 @@
     flex-direction: column;
     margin-top: 280px;
     justify-content: center;
+    align-items: center;
     gap: 0;
   }
 
@@ -282,6 +286,7 @@
     }
   }
   .nosotros-puestos {
+    max-width: 999px;
     padding-top: 40px;
 
     position: relative;
@@ -290,7 +295,7 @@
     align-items: center;
 
     @include tablet {
-      width: 700px;
+      width: 100%;
       margin-top: 60px;
     }
 
