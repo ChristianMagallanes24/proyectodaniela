@@ -126,15 +126,15 @@
   width: 100%;
 
   @include tablet {
-    height: 120px;
+    height: 150px;
   }
 
   @include tablet2 {
-    height: 120px;
+    height: 150px;
   }
 
   @include mobile {
-    height: 94px;
+    height: 120px;
     justify-content: center;
   }
 
