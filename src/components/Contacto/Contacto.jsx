@@ -1,5 +1,6 @@
 import React from "react";
 import foto from "../../assets/fotocontacto.png";
+import fotocomb from "../../assets/contactocomb.png";
 import vector from "../../assets/Vector.png";
 import "../Contacto/_Contacto.scss";
 import logo from "../../assets/logo(2).png";
@@ -19,11 +20,11 @@ const Contacto = () => {
           <div className="contacto-info">
             <h2 className="info-titulo">¡Da el primer paso!</h2>
             <a
-              href="https://calendly.com/daniela_reuniones/30min"
+              href=" https://docs.google.com/forms/d/e/1FAIpQLSe7O8i2naJoDF9AyqEP_ikHXwh8_zQku_-9Hf59-MdJfboZgA/viewform"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="contacto-btn">Postularme</button>
+              <button className="postularme-btn">Postularme</button>
             </a>
             <a
               href="https://calendly.com/daniela_reuniones/30min"
@@ -77,6 +78,7 @@ const Contacto = () => {
 
         <div className="contacto-img-container">
           <img className="contacto-img" src={foto} alt="foto" />
+          <img className="contacto-img-comb" src={fotocomb} alt="foto" />
         </div>
       </div>
 
