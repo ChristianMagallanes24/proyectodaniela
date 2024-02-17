@@ -151,6 +151,10 @@
         font-weight: 400;
         line-height: 26px;
         /* 100% */
+        .check{
+          color: #55DCC3;
+          font-size: 25px;
+        }
         @include mobile{
           font-size: 18px;
         }
@@ -165,6 +169,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 26px;
+        .check{
+          color: #55DCC3;
+          font-size: 25px;
+        }
         /* 100% */
         @include mobile{
           font-size: 18px;
@@ -217,6 +225,7 @@
       }
 
       .accion-btn {
+       
         @include mobile{
           font-size: 22px;
           padding: 5px 10px;
@@ -228,7 +237,7 @@
           align-items: center;
           gap: 10px;
           border-radius: 25px;
-          background: #fff;
+          background-color: #fff;
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           color: var(--Colores-diseo-alta-Color-Primario, #00cba6);
           text-align: center;
@@ -240,10 +249,11 @@
           font-weight: 700;
           line-height: 31.25px; /* 100% */
           border: hidden;
+        
          
           a {
             text-decoration: none;
-            
+           
           }
         }
       }

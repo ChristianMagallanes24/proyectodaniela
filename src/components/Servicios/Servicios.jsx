@@ -29,9 +29,9 @@ const Servicios = () => {
             <img className="servicio-img" src={miUnion} alt="Mi Imagen" />
             <div>
               <h3 className="servicio-titulo">Servicios de recruiting</h3>
-              <p className="servicio-parrafo">
-                Ofrecemos servicios de reclutamiento personalizados que se
-                adaptan a tus necesidades y perfil. Nuestro servicio es 100%
+              <p className="servicio-parrafo"><span className="check">▣</span>
+                 Ofrecemos servicios de reclutamiento personalizados que se
+                adaptan a tus necesidades y perfil. <br /> <span className="check">▣</span> Nuestro servicio es 100%
                 personalizado a éxito, de calidad, basado en el conocimiento del
                 mercado, en la confianza y transparencia. Garantizamos que
                 encontrarás lo que buscas.
@@ -45,10 +45,11 @@ const Servicios = () => {
                 Consultoría organizacional y capital humano
               </h3>
               <p className="servicio-parrafo2">
-                <li>Informes psicológicos, grafológicos o por competencias.</li>
-                <li>Valoración de puestos. Sistemas de beneficios y compensaciones.</li>
-                <li>Formación y desarrollo. Nóminas y seguridad social.</li>
-                <li>Reestructuración organizacional. Cápsulas HR new</li>
+                <p><span className="check">▣</span> Informes psicológicos, grafológicos o por competencias.</p> 
+                <p><span className="check">▣</span> Valoración de puestos. Sistemas de beneficios y compensaciones.</p>
+                <p><span className="check">▣</span> Formación y desarrollo. Nóminas y seguridad social.</p>
+                <p><span className="check">▣</span> Reestructuración organizacional. Cápsulas HR new</p>
+                
               </p>
             </div>
           </div>
@@ -58,9 +59,9 @@ const Servicios = () => {
               <h3 className="servicio-titulo">
                 Asesoramiento y coaching laboral
               </h3>
-              <p className="servicio-parrafo">
-                Proceso de acompañamiento y desarrollo personalizado para
-                organizaciones.  Identificación de objetivos, superación de
+              <p className="servicio-parrafo"><span className="check">▣</span>
+                P roceso de acompañamiento y desarrollo personalizado para
+                organizaciones.  <br /><span className="check">▣</span> Identificación de objetivos, superación de
                 desafíos y mejoramiento de habilidades, competencias y
                 rendimiento en el entorno laboral. Ayudamos a potenciar a las
                 organizaciones a aprovechar al máximo su capital humano y a

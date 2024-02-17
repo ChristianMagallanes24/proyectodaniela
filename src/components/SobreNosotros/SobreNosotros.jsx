@@ -56,7 +56,7 @@ const SobreNosotros = () => {
 
           <div className="cuadro">
           <div className="titulo-container2">
-            <h1 className="cuadro-titulo2">Vision</h1>
+            <h1 className="cuadro-titulo2">Visión</h1>
             <img className="cuadro-img3" src={myVision} alt="a" />
             </div>
             <div className="cuadro-info">

@@ -46,8 +46,8 @@ const Nosotros = () => {
               <h4>Perfiles IT</h4>
             </div>
 
-            <button className="btn-puestos">#Ciberseguridad</button>
-            <button className="btn-puestos">UXUI</button>
+            <button className="btn-puestos">#CiberSeguridad</button>
+            <button className="btn-puestos">#UXUI</button>
             <button className="btn-puestos">#AgileCoach</button>
             <button className="btn-puestos">#SoftwareArchitects</button>
             <button className="btn-puestos">#IA</button>
@@ -92,7 +92,7 @@ const Nosotros = () => {
           </p>
 
           <Link to="/Servicios" className="btn-nosotros">
-            Saber mas
+            Saber más
           </Link>
         </div>
 
