@@ -2,7 +2,7 @@ import React from "react";
 import horn from "../../assets/horn.png";
 import frame from "../../assets/Frame.png";
 import elipse from "../../assets/elipse.png";
-import vectortransp from "../../assets/vectortransp.png";
+
 import vectortransparente from "../../assets/vectortransparente.png";
 import myNosotros from "../../assets/nosotros.jpeg";
 import { Link } from "react-router-dom";
@@ -32,15 +32,14 @@ const Nosotros = () => {
       {/* información sobre datos y perfiles */}
 
       <div className="nosotros-datos-container">
-        <div className="nosotros-numeros">
-          <img src={vectortransp} alt="vector fondo" />
-          <div className="anios">14 años</div>
-          <div className="nosotros-numeros-descripcion">
-            De experiencia reclutando perfiles que nos avalan
+
+      <div className="nosotros-descripcion">
+            <h4 className="años-titulo">14 años</h4>
+            <p className="años-p">De experiencia reclutando perfiles que nos avalan</p>
           </div>
-        </div>
 
         <div className="nosotros-puestos">
+
           <div className="nosotros-puestos-arriba">
             <div className="nosotros-puestos-titulo">
               <h4>Perfiles IT</h4>
@@ -83,7 +82,7 @@ const Nosotros = () => {
         <div className="que-hacemos-central">
           <img className="fondo-elipse" src={elipse} alt="imagen decorativa" />
           <h1 className="titulo">¿Qué hacemos?</h1>
-          <p>
+          <p className="que-hacemos-p">
             En el mundo actual, la tecnología es un factor clave para el éxito
             de cualquier empresa. Por eso, desde nuestra organización, estamos
             siempre buscando a los mejores profesionales del sector, que nos

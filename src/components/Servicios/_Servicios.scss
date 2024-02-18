@@ -188,8 +188,7 @@
     align-items: center;
     gap: 10px;
     @include mobile {
-      width: 100%;
-      height: 150px;
+      height: 106.63px;
     }
     .accion-contenido {
       display: flex;
@@ -199,7 +198,9 @@
       gap: 33px;
       flex-wrap: wrap;
       @include mobile {
-        gap: 5px;
+        flex-direction: column;
+        gap: 0px;
+        width: 218.25px;
       }
       .accion-titulo {
         color: var(--Colores-diseo-alta-Blanco, #fff);
@@ -214,18 +215,16 @@
         line-height: 39.06px;
         /* 100% */
         @include mobile {
-          font-size: 18px;
-          width: 300px;
-          line-height: 25px;
+          flex-shrink: 0;
+          font-size: 12.99px;
+          line-height: 15px;
+          width: 200px;
         }
       }
 
       .accion-btn {
        
-        @include mobile{
-          font-size: 22px;
-          padding: 5px 10px;
-        }
+      
         .accion-btn {
           display: flex;
           padding: 16px 23px;
@@ -246,7 +245,12 @@
           line-height: 31.25px; /* 100% */
           border: hidden;
         
-         
+          @include mobile {
+            font-size: 12.79px;
+            width: 90px;
+            line-height: 5px;
+            padding: 10px;
+          }
           a {
             text-decoration: none;
            

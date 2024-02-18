@@ -21,14 +21,15 @@ body {
   margin: 0 auto;
   background: url("./assets/test.svg") left top no-repeat,
     url("./assets/testt.svg") right top no-repeat;
-  background-size: 603px auto, 187px auto;
+  background-size: 30% auto, 187px auto;
   background-position: 0px 500px, calc(100% - 0px) 500px;
 
   @include desktop1 {
-    background-size: 400px auto, 187px auto;
-  background-position: 0px 800px, calc(100% - 0px) 500px;
+    background-size: 27% auto, 187px auto;
+  background-position: 0px 500px, calc(100% - 0px) 500px;
   }
   @include mobile {
-    background: none;
+    background-size: 25% auto, 15% auto;
+    background-position: 0px 800px, calc(100% - 0px) 300px;
   }
 }
