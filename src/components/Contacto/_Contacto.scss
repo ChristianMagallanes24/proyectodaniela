@@ -90,8 +90,8 @@
             width: 300px;
           }
           @include mobile {
-            font-size: 25.46px;
-            width: 226px;
+            font-size: 20.46px;
+            width: 225px;
             line-height: 20px;
           }
         }
@@ -154,13 +154,17 @@
         display: none;
       }
     }
+   .contacto-img-container{
+    width: 50%;
     .contacto-img-comb {
       display: none;
       @include mobile {
         display: inline-flex;
         margin-bottom: 170px;
+        width: 100%;
       }
     }
+   }
     .footer-iconos-mail {
       @include tablet {
         height: 200px;
