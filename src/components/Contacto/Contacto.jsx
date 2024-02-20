@@ -1,7 +1,7 @@
 import React from "react";
 import foto from "../../assets/fotocontacto.png";
-import fotocomb from "../../assets/contactocomb.png";
-import vector from "../../assets/Vector.png";
+import fotocomb from "../../assets/contacto1.png";
+
 import "../Contacto/_Contacto.scss";
 import logo from "../../assets/logo(2).png";
 import fb from "../../assets/facebook.svg";
@@ -13,9 +13,7 @@ const Contacto = () => {
   return (
     <div className="contacto-container">
       <div className="contacto-body">
-        <div className="contacto-vector">
-          <img className="vector" src={vector} alt="vector-decorativo" />
-        </div>
+        
         <div className="contacto-info-redes">
           <div className="contacto-info">
             <h2 className="info-titulo">¡Da el primer paso!</h2>

@@ -184,9 +184,13 @@
   .nosotros-descripcion {
     background-image: url(../../assets/vectortransp.png);
     background-position: top;
-    
      font-size: 25.63px;
      width: 250px;
+     @include mobile{
+      background-size: 310px;
+      background-position: -20px 60px;
+     height: 320px;
+     }
      .años-p{
       font-size: 21px;
       @include mobile{
@@ -453,12 +457,17 @@
     width: 518px;
     gap: 20px;
     top: 0%;
+    .fondo-elipse{
+      width: 40%;
+    }
     .que-hacemos-p{
       font-size: 24px;
       line-height: 28px;
       font-weight: 400;
       @include mobile{
-        font-size: 18px;
+        font-size: 15px;
+      
+        line-height: 18px;
       }
     }
     @include mobile {

@@ -29,12 +29,14 @@ const Servicios = () => {
             <img className="servicio-img" src={miUnion} alt="Mi Imagen" />
             <div>
               <h3 className="servicio-titulo">Servicios de recruiting</h3>
-              <p className="servicio-parrafo"><span className="check">▣</span>
+              <p className="servicio-parrafo">
+                <p><span className="check">▣</span>
                  Ofrecemos servicios de reclutamiento personalizados que se
-                adaptan a tus necesidades y perfil. <br /> <span className="check">▣</span> Nuestro servicio es 100%
+                adaptan a tus necesidades y perfil.</p>
+                <p><span className="check">▣</span> Nuestro servicio es 100%
                 personalizado a éxito, de calidad, basado en el conocimiento del
                 mercado, en la confianza y transparencia. Garantizamos que
-                encontrarás lo que buscas.
+                encontrarás lo que buscas.</p>
               </p>
             </div>
           </div>
@@ -59,13 +61,16 @@ const Servicios = () => {
               <h3 className="servicio-titulo">
                 Asesoramiento y coaching laboral
               </h3>
-              <p className="servicio-parrafo"><span className="check">▣</span>
-                P roceso de acompañamiento y desarrollo personalizado para
-                organizaciones.  <br /><span className="check">▣</span> Identificación de objetivos, superación de
+              <p className="servicio-parrafo">
+                <p><span className="check">▣</span> 
+                Proceso de acompañamiento y desarrollo personalizado para
+                organizaciones.  </p>
+                <p><span className="check">▣</span> Identificación de objetivos, superación de
                 desafíos y mejoramiento de habilidades, competencias y
-                rendimiento en el entorno laboral. Ayudamos a potenciar a las
+                rendimiento en el entorno laboral.</p>
+                <p> <span className="check">▣</span>Ayudamos a potenciar a las
                 organizaciones a aprovechar al máximo su capital humano y a
-                mantenerse ágiles y receptivas ante los desafíos del mercado.
+                mantenerse ágiles y receptivas ante los desafíos del mercado.</p>
               </p>
             </div>
           </div>

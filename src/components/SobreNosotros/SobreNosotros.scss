@@ -14,8 +14,8 @@
   @include mobile{
     background: url("./PHOTOS.svg") left top no-repeat,
     url("./Vector_1.svg") right top no-repeat;
-    background-size: 96px auto, 204px auto;
-    background-position: 0px 910px, calc(100% - 0px) 310px;
+    background-size: 96px auto, 154px auto;
+    background-position: 0px 410px, calc(100% - 0px) 50px;
     
   }
   .sobre-nosotros-descripcion {
@@ -72,8 +72,9 @@
          
         }
       @include mobile{
-        font-size: 20px;
+        font-size: 15px;
        padding: 0px 10px;
+       line-height: 16px;
       }
       }
     }
@@ -101,6 +102,9 @@
       
       @include tablet {
         width: 100%;
+      }
+      @include mobile{
+        margin-bottom: 50px;
       }
       .titulo-container3{
         display: flex;
@@ -133,7 +137,7 @@
             right: 205px;
             filter: opacity(0.7);
             @include mobile{
-              left: 4%;
+              right: 200px;
             }
          }
         }
@@ -168,7 +172,7 @@
             right: 33px;
             filter: opacity(0.7);
             @include mobile{
-              right: -1%;
+              right: -5%;
             }
          }
       }
@@ -267,8 +271,9 @@
             padding: 0px 20px;
           }
           @include mobile{
-            text-align: center;
-            padding: 0px 20px;
+            font-size: 15px;
+            padding: 0px 10px;
+            line-height: 16px;
           }
           span{
             color: #008E81B2;
