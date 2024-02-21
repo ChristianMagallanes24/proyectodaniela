@@ -60,10 +60,13 @@
   .nav-btn{
     color: #fff;
     transition: .2s;
-    &:hover{
-      font-size: 20px;
-      transition: .2s;
-    }
+    &:hover,
+  &.active {
+    color: #000000;
+    border-radius: 15px;
+    background: var(--Colores-diseo-alta-Color-Secundario-1, #f0efef); 
+    transition: color 0.1s;
+  }
   }
   .navbar{
     background: #008E81;
