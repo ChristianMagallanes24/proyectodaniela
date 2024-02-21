@@ -123,6 +123,13 @@
     line-height: 24px; /* 120% */
     text-decoration: none;
     border: hidden;
+    transition: .5s;
+    &:hover{
+      background-color: #008E81;
+      transition: .5s;
+      box-shadow: -10px 4px 4px 0px rgba(0, 0, 0, 0.671);
+        
+    }
     @include mobile {
       height: 30px;
     }
@@ -514,7 +521,7 @@
       width: 171px;
       height: 46px;
       z-index: 2;
-
+      
       @include mobile {
         width: 101.6px;
         height: 27.33px;
@@ -610,7 +617,12 @@
       font-weight: 700;
       line-height: 31.25px; /* 100% */
       border: hidden;
-
+      transition: .5s;
+      &:hover{
+        box-shadow: -10px 4px 4px 0px rgba(0, 0, 0, 0.671);
+        transition: .5s;
+        
+      }
       @include mobile {
         font-size: 12.79px;
         width: 90px;

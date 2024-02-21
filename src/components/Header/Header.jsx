@@ -4,7 +4,7 @@ import miImagen from "../../assets/headerimg.png";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header id="header" className="header">
       {/* Información del header */}
       <div className="header-info">
         <div className="header-text">

@@ -1,23 +1,37 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 import miLogo from "../../assets/logo.png";
 import "../../components/NavBar/_NavBar.scss";
-import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const handleButtonClick = (section) => {
-    console.log(`Navegar a: ${section}`);
-    setIsOpen(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const handleButtonClick = () => {
+    setIsOpen(!isOpen);
   };
+
+  const scrollToTop = () => {
+    // Desplázate hacia arriba de manera suave con una duración más corta
+    scroll.scrollToTop({
+      duration: 300, // Duración de la animación en milisegundos
+      smooth: "easeInOutQuart", // Función de animación suave
+    });
+  };
+
+  useEffect(() => {
+    // Cierra el menú cuando cambias de página
+    setIsOpen(false);
+
+    // Desplázate hacia arriba de manera instantánea después de la transición de la página
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [location.pathname]);
 
   return (
     <div className="navbar">
       <div className="nav_logo">
-        <Link to="/">
+        <Link to="/" onClick={() => scrollToTop()}>
           <img className="logo" src={miLogo} alt="logo" />
         </Link>
       </div>
@@ -25,7 +39,10 @@ const Navbar = () => {
         <Link
           to="/"
           className={`nav-btn ${location.pathname === "/" && "active"}`}
-          onClick={() => handleButtonClick("")}
+          onClick={() => {
+            handleButtonClick();
+            scrollToTop();
+          }}
         >
           Inicio
         </Link>
@@ -34,7 +51,10 @@ const Navbar = () => {
           className={`nav-btn ${
             location.pathname === "/sobreNosotros" && "active"
           }`}
-          onClick={() => handleButtonClick("sobreNosotros")}
+          onClick={() => {
+            handleButtonClick();
+            scrollToTop();
+          }}
         >
           Sobre nosotros
         </Link>
@@ -43,14 +63,20 @@ const Navbar = () => {
           className={`nav-btn ${
             location.pathname === "/servicios" && "active"
           }`}
-          onClick={() => handleButtonClick("servicios")}
+          onClick={() => {
+            handleButtonClick();
+            scrollToTop();
+          }}
         >
           Servicios
         </Link>
         <Link
           to="/contacto"
           className={`nav-btn ${location.pathname === "/contacto" && "active"}`}
-          onClick={() => handleButtonClick("contacto")}
+          onClick={() => {
+            handleButtonClick();
+            scrollToTop();
+          }}
         >
           Contacto
         </Link>
