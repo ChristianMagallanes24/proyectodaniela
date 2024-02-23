@@ -30,8 +30,7 @@ const Servicios = () => {
             <div>
               <h3 className="servicio-titulo">Servicios de recruiting</h3>
               <p className="servicio-parrafo">
-                <p><span className="check">▣</span>
-                 Ofrecemos servicios de reclutamiento personalizados que se
+                <p><span className="check">▣</span> Ofrecemos servicios de reclutamiento personalizados que se
                 adaptan a tus necesidades y perfil.</p>
                 <p><span className="check">▣</span> Nuestro servicio es 100%
                 personalizado a éxito, de calidad, basado en el conocimiento del
@@ -62,14 +61,13 @@ const Servicios = () => {
                 Asesoramiento y coaching laboral
               </h3>
               <p className="servicio-parrafo">
-                <p><span className="check">▣</span> 
-                Proceso de acompañamiento y desarrollo personalizado para
+                <p><span className="check">▣</span> Proceso de acompañamiento y desarrollo personalizado para
                 organizaciones.  </p>
                 <p><span className="check">▣</span> Identificación de objetivos, superación de
                 desafíos y mejoramiento de habilidades, competencias y
                 rendimiento en el entorno laboral.</p>
-                <p> <span className="check">▣</span>Ayudamos a potenciar a las
-                organizaciones a aprovechar al máximo su capital humano y a
+                <p> <span className="check">▣</span> Ayudamos a potenciar a las
+                organizaciones a aprovechar al máximo su capital humano, a
                 mantenerse ágiles y receptivas ante los desafíos del mercado.</p>
               </p>
             </div>
