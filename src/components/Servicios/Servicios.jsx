@@ -49,7 +49,7 @@ const Servicios = () => {
                 <p><span className="check">▣</span> Informes psicológicos, grafológicos o por competencias.</p> 
                 <p><span className="check">▣</span> Valoración de puestos. Sistemas de beneficios y compensaciones.</p>
                 <p><span className="check">▣</span> Formación y desarrollo. Nóminas y seguridad social.</p>
-                <p><span className="check">▣</span> Reestructuración organizacional. Cápsulas HR new</p>
+                <p><span className="check">▣</span> Reestructuración organizacional. Cápsulas HR new.</p>
                 
               </p>
             </div>
